@@ -1,0 +1,16 @@
+{
+  "evidence_type": "Mechanical traceability check, not semantic validation",
+  "tasks": 4,
+  "judgments": {
+    "supported": 2,
+    "refuted": 1,
+    "not established": 1
+  },
+  "source_documents": 1,
+  "anchor_checks": {
+    "configurations": true,
+    "position": true,
+    "variation": true
+  },
+  "extension_sha256": "b7b597b702368b941a6ace4b7a09b034925ec0beec2f9302716dab0e1bafb0e8"
+}

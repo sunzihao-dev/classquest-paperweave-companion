@@ -5,7 +5,7 @@ type: software
 authors:
   - name: "sunzihao-dev"
     website: "https://github.com/sunzihao-dev"
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-11-01"
 url: "https://github.com/sunzihao-dev/classquest-paperweave-companion"
 repository-code: "https://github.com/sunzihao-dev/classquest-paperweave-companion"

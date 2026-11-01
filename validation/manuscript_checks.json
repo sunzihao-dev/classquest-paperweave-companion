@@ -1,0 +1,51 @@
+{
+  "scope": "Editorial and format validation, not independent verification of participant records or an official ACE review",
+  "papers": {
+    "classquest": {
+      "pdf": "output/pdf/classquest_submission.pdf",
+      "sha256": "b5b171fd9a6724d9a2135cb0ce84b55449913ee75b87047c3c081ab97a194b46",
+      "pages": 7,
+      "cited_reference_count": 25,
+      "all_fonts_embedded": true,
+      "automated_checks_pass": true,
+      "visual_review": {
+        "completed": true,
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "render_dpi": 110,
+        "finding": "All pages inspected; final-page balancing rechecked, other pages pixel-identical to inspected renders. No clipping, overlap or broken tables."
+      }
+    },
+    "paperweave": {
+      "pdf": "output/pdf/paperweave_submission.pdf",
+      "sha256": "24627672d817decb56df35a29de1410fbe9d39ffe8d97f97d8088777c4d9d43c",
+      "pages": 9,
+      "cited_reference_count": 30,
+      "all_fonts_embedded": true,
+      "automated_checks_pass": true,
+      "visual_review": {
+        "completed": true,
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "render_dpi": 110,
+        "finding": "All pages inspected; final-page balancing rechecked, other pages pixel-identical to inspected renders. No clipping, overlap or broken tables."
+      }
+    }
+  }
+}

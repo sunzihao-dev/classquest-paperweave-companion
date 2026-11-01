@@ -3,10 +3,12 @@
   "checks": [
     "Aggregate questionnaire arithmetic",
     "ClassQuest audit and frozen module hashes",
+    "Completion check: 46,375 states and 163,680 resolution transitions",
     "PaperWeave original nine-edge census",
     "Constructed coverage and paired-retry example",
     "Teaching resource coverage, IDs, judgments and hash",
-    "Exact source hashes, 15 PDF anchors and byte-identical teaching pack regeneration"
+    "New-source exercise structure and hash",
+    "Six exact source hashes, 15 core and 3 extension anchors, byte-identical teaching materials"
   ],
   "classroom_aggregate_summaries": {
     "classquest": {

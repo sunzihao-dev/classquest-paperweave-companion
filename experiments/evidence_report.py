@@ -2,6 +2,34 @@
 This is deliberately separate from the existing ClassQuest application.
 """
 
+from fractions import Fraction
+
+def completion_check(correct, incorrect, pending, missing):
+    """Expose sensitivity of the frozen report's rounded 55/80 bands.
+
+    Exactly one item, one known roster, and non-negative integer counts.
+    Unknown responses are allowed either binary outcome; none is imputed.
+    A stable band does not validate the item, grading or pedagogical action.
+    """
+    values = (correct, incorrect, pending, missing)
+    if any(type(v) is not int or v < 0 for v in values):
+        raise ValueError('Counts must be non-negative integers')
+    n = sum(values)
+    if not n:
+        return dict(n=0, possible_bands=[], completion_sensitive=None,
+                    early_signal=True, completion_bounds=None)
+    def band(k):
+        # Python ties-to-even rounding, as in the frozen implementation.
+        rate = round(Fraction(100*k, n))
+        return 0 if rate < 55 else 1 if rate < 80 else 2
+    low, high = correct, correct + pending + missing
+    names = ['reteach', 'recap', 'advance']
+    # With small rosters, consecutive attainable totals can skip a band.
+    bands = [names[i] for i in sorted({band(k) for k in range(low,high+1)})]
+    return dict(n=n, possible_bands=bands, completion_sensitive=len(bands)>1,
+                early_signal=correct+incorrect<3,
+                completion_bounds=[low/n,high/n])
+
 def item_summary(roster, rows):
     """One response per participant to ONE item. Reject duplicates/unlisted IDs."""
     roster=set(roster); seen=set(); counts={'correct':0,'incorrect':0,'needs_review':0}

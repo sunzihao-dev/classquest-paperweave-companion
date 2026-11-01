@@ -1,0 +1,8 @@
+{
+  "transformer": {
+    "title": "Attention Is All You Need",
+    "version": "NIPS 2017 proceedings PDF",
+    "url": "https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+    "sha256": "d87d482d5ae7960e2e43d7dd6d21377e60e73e8fce1bf2a01aff7aca8a08c537"
+  }
+}

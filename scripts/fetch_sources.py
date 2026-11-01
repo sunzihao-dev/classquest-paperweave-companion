@@ -6,6 +6,7 @@ import urllib.request
 
 root = Path(__file__).resolve().parents[1]
 manifest = json.loads((root/'experiments/paperweave_source_manifest.json').read_text())
+manifest.update(json.loads((root/'experiments/paperweave_extension_manifest.json').read_text()))
 out = root/'literature'
 out.mkdir(exist_ok=True)
 for name, source in manifest.items():

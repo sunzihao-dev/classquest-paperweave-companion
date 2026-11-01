@@ -42,6 +42,9 @@ with tempfile.TemporaryDirectory() as work:
     actual.pop('provenance'); recorded.pop('provenance')
     assert actual == recorded
     checks.append('ClassQuest audit and frozen module hashes')
+    run('audit_completion_check.py')
+    assert json.loads((tmp/'experiments/completion_check_results.json').read_text()) == json.loads((root/'experiments/completion_check_results.json').read_text())
+    checks.append('Completion check: 46,375 states and 163,680 resolution transitions')
     run('audit_paperweave.py')
     assert json.loads((tmp/'experiments/paperweave_results.json').read_text()) == json.loads((root/'experiments/paperweave_results.json').read_text())
     checks.append('PaperWeave original nine-edge census')
@@ -64,17 +67,27 @@ with tempfile.TemporaryDirectory() as work:
     assert hashlib.sha256(bankpath.read_bytes()).hexdigest() == audit['claim_bank_sha256']
     assert all(set(c['passages']) <= set(bank['passages']) for c in bank['cards'])
     checks.append('Teaching resource coverage, IDs, judgments and hash')
+    extension_path = root/'teaching_materials/paperweave/assessment_extension.json'
+    extension = json.loads(extension_path.read_text())
+    extension_audit = json.loads((root/'experiments/paperweave_extension_audit.json').read_text())
+    assert len(extension['tasks']) == 4
+    assert len({t['id'] for t in extension['tasks']}) == 4
+    assert all(set(t['passages']) <= set(extension['passages']) for t in extension['tasks'])
+    assert hashlib.sha256(extension_path.read_bytes()).hexdigest() == extension_audit['extension_sha256']
+    checks.append('New-source exercise structure and hash')
     if args.with_sources:
         (tmp/'literature').mkdir()
-        for name in bank['documents']:
+        for name in [*bank['documents'], 'transformer']:
             source = root/'literature'/f'{name}.pdf'
             if not source.exists(): raise SystemExit('Run scripts/fetch_sources.py first: missing '+source.name)
             shutil.copy2(source,tmp/'literature'/source.name)
         run('build_paperweave_teaching_pack.py')
+        run('build_paperweave_extension.py')
         for file in (root/'teaching_materials/paperweave').iterdir():
             if file.is_file(): assert file.read_bytes() == (tmp/'teaching_materials/paperweave'/file.name).read_bytes(), file.name
         assert json.loads((tmp/'experiments/paperweave_resource_audit.json').read_text()) == audit
-        checks.append('Exact source hashes, 15 PDF anchors and byte-identical teaching pack regeneration')
+        assert json.loads((tmp/'experiments/paperweave_extension_audit.json').read_text()) == json.loads((root/'experiments/paperweave_extension_audit.json').read_text())
+        checks.append('Six exact source hashes, 15 core and 3 extension anchors, byte-identical teaching materials')
 
 report = {'status':'passed','checks':checks,'classroom_aggregate_summaries':summaries,
           'source_pdf_check_run':args.with_sources,

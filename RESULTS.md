@@ -37,3 +37,13 @@ All **15 locator anchors** resolve on the declared PDF pages across five source 
 ## Remaining evaluation limits
 
 The new card resource was prepared after the reported classroom sessions and has not been tested with students. The earlier PaperWeave group activities have no complete group-specific outcome comparison available, and the teacher's clarification reached both groups. No causal advantage is claimed. The manuscripts describe qualitative teaching episodes without converting them into numerical success rates. No withdrawn illustrative follow-up scores are included.
+
+## Completion-sensitive reporting check (v1.1.0)
+
+The implemented companion enumerates attainable reporting bands when pending or missing responses are resolved for one item. It preserves the frozen report's nearest-integer, ties-to-even rounding and provisional 55/80 cutoffs. All **46,375** count configurations for rosters of 1–30 matched an independent integer oracle. All **163,680** applicable one-response resolution transitions narrowed or retained the possible band set. The check preserves the early-signal flag separately and returns no band for an empty roster. A stable band is not evidence of mastery or a validated teaching recommendation. See [results](experiments/completion_check_results.json).
+
+## Worked feedback and new-source exercise (v1.1.0)
+
+The extension supplies four constructed feedback examples and four tasks using the Transformer paper, outside the original map. Two tasks are supported, one refuted and one not established by the named source context; these are designed judgments. Three anchors resolve in one additional pinned PDF. This tests traceability, not semantic validity. The exercise concerns source-scoped reasoning within a new paper, not building a new inter-paper map.
+
+The practitioner reports researcher feedback on an **earlier prototype/draft** concerning DPR–FiD dataset scope, T5–FiD experimental choice and T5–BART comparison versus historical influence. The original feedback sheet was not inspected, and the feedback does not validate the current 18-card key or the new exercise. No new student results are claimed.

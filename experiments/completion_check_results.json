@@ -1,0 +1,30 @@
+{
+  "evidence_type": "Exhaustive synthetic software check, not educational validation",
+  "roster_sizes": [
+    1,
+    30
+  ],
+  "count_states": 46375,
+  "oracle_mismatches": 0,
+  "completion_sensitive_states": 36563,
+  "monotonic_resolution_checks": 163680,
+  "monotonic_violations": 0,
+  "empty_roster_checked": true,
+  "invalid_inputs_rejected": 4,
+  "rounding": "Python nearest-integer ties-to-even before 55/80 thresholds",
+  "example": {
+    "n": 30,
+    "possible_bands": [
+      "reteach",
+      "recap",
+      "advance"
+    ],
+    "completion_sensitive": true,
+    "early_signal": false,
+    "completion_bounds": [
+      0.4,
+      0.9
+    ]
+  },
+  "limits": "One binary-scored item; unknown outcomes unconstrained; thresholds are unvalidated heuristics."
+}
