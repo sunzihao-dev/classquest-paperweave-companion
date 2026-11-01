@@ -60,3 +60,26 @@ def paired_retry(first,retry):
     return dict(matched_n=len(common),first_only_n=len(set(a)-set(b)),retry_only_n=len(set(b)-set(a)),
         matched_change_pp=100*sum(int(b[x])-int(a[x]) for x in common)/len(common) if common else None,
         interpretation='Descriptive paired change; item equivalence and causal learning are unestablished.')
+
+def offered_item_summary(roster, offered, rows):
+    """Summarise ONE item using explicit opportunity-to-respond records.
+
+    Offered means the item was made available, not that it was read. None is
+    unknown exposure and must not be inferred from the observed responses.
+    The caller supplies one unique roster and the subset offered this item.
+    """
+    if offered is None:
+        raise ValueError('An explicit offered set is required; exposure is unknown')
+    roster, offered = list(roster), list(offered)
+    if len(set(roster)) != len(roster) or len(set(offered)) != len(offered):
+        raise ValueError('Roster and offered IDs must be unique')
+    if not set(offered) <= set(roster):
+        raise ValueError('Offered IDs must belong to the roster')
+    rows = list(rows)
+    if any(r['outcome'] not in ('correct', 'incorrect', 'needs_review') for r in rows):
+        raise ValueError('Unsupported outcome')
+    result = item_summary(offered, rows)
+    result.update(roster_n=len(roster), offered_n=len(offered),
+                  not_offered=len(roster)-len(offered),
+                  interpretation='Coverage and completion bounds concern only learners offered this item; offer does not prove access, reading or learning.')
+    return result

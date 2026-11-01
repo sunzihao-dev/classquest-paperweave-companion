@@ -1,10 +1,11 @@
 {
+  "version": "1.2.0",
   "scope": "Editorial and format validation, not independent verification of participant records or an official ACE review",
   "papers": {
     "classquest": {
       "pdf": "output/pdf/classquest_submission.pdf",
-      "sha256": "b5b171fd9a6724d9a2135cb0ce84b55449913ee75b87047c3c081ab97a194b46",
-      "pages": 7,
+      "sha256": "b02b14dd18a5ae19439156e92a869ccc5fc8b60c9b21bf62cdf2684276ad7c3d",
+      "pages": 8,
       "cited_reference_count": 25,
       "all_fonts_embedded": true,
       "automated_checks_pass": true,
@@ -17,15 +18,16 @@
           4,
           5,
           6,
-          7
+          7,
+          8
         ],
-        "render_dpi": 110,
-        "finding": "All pages inspected; final-page balancing rechecked, other pages pixel-identical to inspected renders. No clipping, overlap or broken tables."
+        "finding": "All final pages visually inspected; no clipping, overlap or broken tables. Final changed pages were re-rendered and inspected.",
+        "render_height_pixels": 1600
       }
     },
     "paperweave": {
       "pdf": "output/pdf/paperweave_submission.pdf",
-      "sha256": "24627672d817decb56df35a29de1410fbe9d39ffe8d97f97d8088777c4d9d43c",
+      "sha256": "0f452e94df65731c31840a43866960b97d456294c0e02be99395c420e6611176",
       "pages": 9,
       "cited_reference_count": 30,
       "all_fonts_embedded": true,
@@ -43,8 +45,8 @@
           8,
           9
         ],
-        "render_dpi": 110,
-        "finding": "All pages inspected; final-page balancing rechecked, other pages pixel-identical to inspected renders. No clipping, overlap or broken tables."
+        "finding": "All final pages visually inspected; no clipping, overlap or broken tables. Final changed pages were re-rendered and inspected.",
+        "render_height_pixels": 1600
       }
     }
   }

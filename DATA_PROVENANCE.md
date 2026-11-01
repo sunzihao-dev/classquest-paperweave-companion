@@ -20,3 +20,9 @@ AI tools assisted literature discovery, coding, source inspection, teaching-reso
 The current six-node/five-source distinction is intentional: BERT is a graph node; claims about its use or comparison are checked in the using/comparing papers (DPR, BART, T5, RAG, FiD).
 
 The Transformer paper supplies a separate, prospective four-task extension outside the original six-node map. Its exact PDF is identified in `experiments/paperweave_extension_manifest.json`; the three anchor checks are in `paperweave_extension_audit.json`. The extension does not change the original nine-link corpus. `completion_check_results.json` records exhaustive constructed tests of the companion, separate from the historical application audit.
+
+The May ClassQuest classroom account concerns an earlier or separate prototype. The October demo report described the later implementation as not yet evaluated with real learners. The frozen-module audits and reporting companion do not establish that the same features or defects occurred in May.
+
+`experiments/offered_item_results.json` contains a constructed three-person inactive-retry example and checks of 19,531 five-state assignments on rosters of zero to six learners. These are software inputs, not classroom observations. Reliable item-offer records are required; offer does not prove delivery, access or reading.
+
+PaperWeave's four teaching distinctions are an analysis of authored cases, not a validated taxonomy of learner misconceptions. Two relevant intelligent-bibliometrics studies position the relation-semantics problem; no collaboration or endorsement by their authors is claimed.

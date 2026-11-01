@@ -47,3 +47,9 @@ The implemented companion enumerates attainable reporting bands when pending or 
 The extension supplies four constructed feedback examples and four tasks using the Transformer paper, outside the original map. Two tasks are supported, one refuted and one not established by the named source context; these are designed judgments. Three anchors resolve in one additional pinned PDF. This tests traceability, not semantic validity. The exercise concerns source-scoped reasoning within a new paper, not building a new inter-paper map.
 
 The practitioner reports researcher feedback on an **earlier prototype/draft** concerning DPR–FiD dataset scope, T5–FiD experimental choice and T5–BART comparison versus historical influence. The original feedback sheet was not inspected, and the feedback does not validate the current 18-card key or the new exercise. No new student results are claimed.
+
+## Opportunity to respond
+
+A constructed room offered a selected Boolean-logic retry to three learners. Passing an additional, unoffered Loops retry to the frozen report produced three missing labels for that item. The companion, supplied with an explicit empty offered set, reports three not offered, zero missing and undefined accuracy.
+
+All 19,531 state assignments for rosters of zero to six matched the state-count oracle, and adding an unoffered learner never changed item accuracy, coverage or completion bounds. Seven invalid inputs were rejected. Counts describe an enumerated software test space, not classroom prevalence. See `experiments/offered_item_results.json`.

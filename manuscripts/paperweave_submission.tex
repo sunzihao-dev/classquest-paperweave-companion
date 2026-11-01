@@ -1,8 +1,8 @@
 \input{submission_preamble}
-\title[From Research-Paper Links to Defensible Claims]{From Research-Paper Links to Defensible Claims: A PaperWeave Teaching Resource}
+\title[Qualifying AI Research Claims with PaperWeave]{Teaching Students to Qualify AI Research Claims with PaperWeave}
 \author{Anonymous Author(s)}
 \begin{abstract}
-A research-paper link can denote component reuse, a conditional experimental choice, or an analytical comparison. Treating these meanings as interchangeable can turn a reasonable connection into an unsupported claim. We present PaperWeave as a computing-education resource for teaching students to inspect and repair such claims. A Year 11 classroom account involves 22 students across two sessions and 20 usefulness responses (mean 8.1/10, median 8). A reported difficulty concerns interpreting dataset-dependent retrieval as universal. Building on that account, we completed a source-grounded audit of all nine prototype links and developed 18 contrasting claim cards, source locators, answer rationales and a teacher feedback guide. The resource distinguishes supported, refuted and not-established claims; its judgments retain component roles, experimental conditions and the difference between comparison and inheritance. Worked feedback examples distinguish a correct label from a justified explanation. Four additional tasks use a paper outside the original map to make a prospective check of source-scoped reasoning concrete. Versioned locators make the teaching judgments inspectable; learning effectiveness remains unmeasured. The contribution is an adoptable, computing-specific explanation activity with a complete worked corpus and bounded practitioner reflection. The new materials were prepared after the classroom sessions; no comparative or lasting learning benefit is claimed.
+Research maps connect AI methods, but a connection alone does not establish what was reused, under which conditions, or whether one method influenced another. We present a practitioner approach for teaching secondary computing students to qualify such claims with PaperWeave. In two Year 11 sessions involving 22 students, a reported misunderstanding treated dataset-dependent retrieval as universal; teacher-guided source inspection led to revised explanations. Twenty usefulness responses had a mean of 8.1/10 and median of 8, providing perception evidence rather than a learning estimate. A subsequent audit of all nine prototype links produced 18 contrasting claim cards with versioned source locations and repair rationales. A cross-case analysis organises the teaching demands around component identity, experimental scope, necessity and historical attribution. These distinctions connect a graph-reading difficulty to specific feedback actions: name the component, restore a condition, supply a counterexample or request additional evidence. We provide a lesson sequence, separate student and teacher materials, worked explanations and four tasks on a new source. The contribution is a reusable computing-specific practice for moving from a plausible research connection to a justified, bounded claim. The new materials follow the classroom sessions; their learning effects and independent answer-key reliability remain unevaluated.
 \end{abstract}
 \ccsdesc[500]{Social and professional topics~Computing education}
 \keywords{computing education, AI literacy, research literacy, evidence evaluation, practitioner experience}
@@ -13,15 +13,17 @@ Research-based computing lessons often use diagrams to connect architectures, da
 
 We address this problem through PaperWeave, a small browser-based map of six natural-language-processing (NLP) papers. The teaching objective is to explain a relationship using an appropriate source and retain conditions that limit the claim. The learner is not expected to reproduce the models or master their mathematical details. Instead, the activity uses concrete computing examples to practise a distinction familiar in scientific reasoning: what was actually implemented, what could be implemented, and what the evidence does not establish.
 
-This practitioner account draws on two classroom sessions, descriptive feedback, a subsequent structural audit, and inspection of the underlying research papers. These sources answer different questions. Classroom feedback describes participants' perceptions; the audit describes the current artifact; source inspection motivates teaching examples. We do not combine them into a claim that PaperWeave caused an improvement in understanding.
+The classroom account supplies perceptions and a teaching episode. A subsequent artifact audit and source inspection supply the worked materials. These evidence sources are reported separately; neither establishes a learning effect.
 
-The paper contributes three connected resources. \textbf{C1: a structured claim record} separates a link's meaning from the evidence for a particular claim, retaining its component role, scope and source context. \textbf{C2: a complete worked corpus} covers all nine prototype links with 18 contrasting claims, source locators, judgments and repair rationales; its traceability is checked against version-identified PDFs. \textbf{C3: an adoption and feedback package} translates the classroom difficulty and source analysis into a student response sheet, a staged lesson, worked feedback examples and four new-source tasks. These make the required reasoning visible beyond a final judgment label. The contribution lies in the completed computing-specific materials and their connection to practice. Claim verification, scientific explanation and graph navigation are established approaches.
+The paper contributes three connected resources. \textbf{C1: a claim-repair practice for computing} asks learners to distinguish component identity, experimental scope, necessity and historical attribution, and to explain which evidence changes a judgment. \textbf{C2: a complete worked corpus} covers all nine prototype links with 18 contrasting claims, versioned source locators and repair rationales. \textbf{C3: an adoption and feedback method} connects each reasoning difficulty to a teaching response, with separate student materials, a teacher key and a procedure for preparing another claim pair. The contribution is the operational detail of this practice and its bounded classroom reflection. Scientific explanation, claim verification and research mapping are established approaches.
+
+The central instructional choice is to assess the \emph{inference made from a link}, rather than ask whether two papers are related. For example, ``FiD used DPR on these datasets'' and ``FiD requires DPR'' can refer to the same two nodes while making different claims. Students must identify the extra premise in the stronger sentence and decide whether the source warrants it. This provides a concrete learning objective and an observable written product without requiring students to implement the underlying models.
 
 \section{Relationship to prior work}
 \subsection{A bounded objective within AI literacy}
 Long and Magerko~\cite{long} identify competencies for understanding and critically evaluating AI. Touretzky et al.~\cite{touretzky} articulate a K--12 agenda for communicating AI concepts, limitations and implications. Ng et al.~\cite{ng} distinguish understanding, application, evaluation and ethical dimensions, while Mannila et al.~\cite{mannila} examine K--12 AI literacy through stakeholder perspectives at ACE. PaperWeave addresses a narrower target within this landscape: explaining what the evidence supports about a relationship between computing methods. Recognising model names or operating a graph is not sufficient evidence of that capability.
 
-Age and prior experience also affect the design. Druga et al.~\cite{druga} studied younger children's encounters with AI across different backgrounds, highlighting variation in experience and collaboration. Their population differs from our Year 11 cohort; the relevant design lesson is to establish prerequisites rather than assume a uniform starting point. Our materials consequently separate technical vocabulary from judgments about a claim's scope.
+Prior computing knowledge remains a prerequisite. A learner who cannot distinguish a retriever from a generator needs vocabulary support before their explanation can reveal how they reason about evidence. The materials therefore separate a short vocabulary check from the claim judgment.
 
 \subsection{Source evaluation has a substantial educational history}
 Wineburg~\cite{wineburg} studied differences between historians and school students in evaluating documentary evidence. Britt and Aglinskas~\cite{britt} developed and evaluated instruction in sourcing, contextualisation and corroboration. Goldman et al.~\cite{goldman} connect evaluation with navigation, monitoring and sense-making when learning from multiple Internet sources. These studies establish that consulting documents and reasoning with evidence are distinct skills requiring instructional support.
@@ -33,32 +35,23 @@ Citation intent and claim support answer different questions. SciCite~\cite{scic
 
 McNeill et al.~\cite{mcneill} make claim, evidence and reasoning explicit in school science and examine performance when explanation scaffolds are removed. Their chemistry setting differs from ours, and their findings do not validate the present activity. We use the precedent to require an explanation of why a passage warrants a claim and to distinguish supported classroom performance from later independent reasoning. The addition here is a worked computing corpus in which parameter sharing, update policy, dataset conditions and architectural necessity can change the judgment.
 
+\subsection{Research mapping and the meaning of a connection}
+Intelligent bibliometrics provides a relevant computational precedent. Zhang et al.~\cite{zhangkbc} combine topic analysis, network analysis, scientific evolutionary pathways and document ranking in knowledge-base construction. Zhang et al.~\cite{zhangsao} also represent subjects, actions and objects in a layered semantic network to investigate problem-solving patterns. These approaches show why research relationships deserve a richer representation than an undifferentiated connection between documents. Their objectives concern knowledge discovery and research analysis, rather than the secondary-school teaching task studied here.
+
+Our instructional response is to make a learner articulate the actor or component, the action and its limiting conditions before judging the evidence. We do not implement or evaluate those bibliometric algorithms. Instead, their attention to relation semantics helps locate the educational problem: interpreting a connection requires preserving what it actually represents. The four teaching distinctions in Table~\ref{tab:inference} make this requirement concrete for AI architectures and experiments.
+
 \subsection{Scholarly-reading interfaces are close precedents}
 PaperWeaver~\cite{paperweaver} contextualises recommended papers in relation to a researcher's collection using citation-based descriptions and generated comparisons. Despite the similar name, PaperWeave is a separate classroom prototype. Synergi~\cite{synergi} supports scholarly synthesis through citation contexts and mixed-initiative interaction. These precedents make an inter-paper map or explanation of a connection insufficient as a novelty claim.
 
 Other interfaces support important parts of the reading process. CiteRead~\cite{citeread} integrates localised commentary from citing papers; CiteSee~\cite{citesee} uses reading history to contextualise citations and aid discovery. Scim~\cite{scim} assists skimming, and ScholarPhi~\cite{scholarphi} provides definitions of terms and symbols where readers need them. These functions inform the proposed source-location and glossary support. PaperWeaver also analyses facts and relationships in participants' notes~\cite{paperweaver}; it would therefore be inaccurate to claim that prior interfaces only support navigation. Our distinction is the deliberately contrasting claim task and its secondary-computing adoption materials, not the invention of evaluating written understanding.
 
-The educational difference is therefore the required learner product: a claim with its component role, supporting location, limiting conditions and a justified decision to retain, revise or withhold it. The same product can be elicited from a printed map. PaperWeave supplies a navigable setting for the activity; its educational contribution does not rely on inventing graph navigation, citation context or automated scholarly synthesis. Table~\ref{tab:position} summarises these task distinctions.
+The educational difference is therefore the required learner product: a claim with its component role, supporting location, limiting conditions and a justified decision to retain, revise or withhold it. The same product can be elicited from a printed map. PaperWeave supplies a navigable setting for the activity; its educational contribution does not rely on inventing graph navigation, citation context or automated scholarly synthesis.
 
-\begin{table*}[t]
-\caption{Positioning by the task and evidence reported in prior work. This is not a performance comparison or an exhaustive feature inventory.}
-\label{tab:position}
-\begin{tabular}{@{}p{0.22\textwidth}p{0.34\textwidth}p{0.38\textwidth}@{}}
-\toprule
-Precedent & Task or output & How the present resource builds on it\\
-\midrule
-PaperWeaver; Synergi~\cite{paperweaver,synergi} & Contextualised paper comparisons and scholarly synthesis & Supply contrasting learner claims and repair rationales for a fixed secondary-computing activity.\\
-SciCite~\cite{scicite} & Citation-purpose classification & Separate a relation's purpose from whether a particular stronger claim follows.\\
-SciFact~\cite{scifact} & Claim--evidence judgments with rationales & Adapt source-relative judgment to component roles and conditions; no new verification algorithm is claimed.\\
-Explanation scaffolds~\cite{mcneill} & Claims, evidence and reasoning; assessment with reduced support & Supply computing-specific prompts, source locations and feedback actions; later independent performance remains unmeasured.\\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 \subsection{Representations, explanations and discussion}
 Ainsworth's DeFT framework~\cite{ainsworth} relates the design and functions of multiple representations to the tasks learners must perform. It motivates asking students to translate an edge into a qualified sentence instead of assuming that switching graph views produces understanding. Mayer and Moreno~\cite{mayer} analyse how instructional design can reduce unnecessary cognitive load; here, a small corpus and short contextualised passages are practical design choices, not evidence of a measured load reduction.
 
-The ICAP framework~\cite{icap} provides a rationale for explanation and substantive interaction. Computing peer-instruction research~\cite{peerinstruction} separates discussion, teacher intervention and later individual performance, while Qiu et al.~\cite{qiu} offer an ACE precedent for structured evaluation of AI-assisted computing material. Our reported paired activity is teacher-facilitated practice, not a validated implementation of all these frameworks. They guide the proposed response sheet and later evaluation without supplying missing outcome evidence for this cohort.
+The ICAP framework~\cite{icap} provides a rationale for explanation and substantive interaction. Computing peer-instruction research~\cite{peerinstruction} separates discussion, teacher intervention and later individual performance. Our reported paired activity is teacher-facilitated practice, not a validated implementation of all these frameworks. They guide the proposed response sheet and later evaluation without supplying missing outcome evidence for this cohort.
 
 \section{Prototype and teaching context}
 \subsection{The artifact}
@@ -66,7 +59,7 @@ PaperWeave provides a curated map of BERT~\cite{bert}, T5~\cite{t5}, BART~\cite{
 
 Each link has a curator-assigned status and an informal source description. A displayed status of \emph{verified} is a prototype category, not a statement that an independent reviewer has validated the relationship. The prototype does not automatically ingest arbitrary papers or extract their relations. It also does not provide a built-in peer discussion, disagreement, or claim-repair interface. Paired discussion in this account was a classroom practice around the tool.
 
-Keeping the corpus small made it possible to describe particular relationships and inspect their sources. It also constrains the contribution: the activity is an NLP teaching case, not a demonstration that the approach scales to any computing topic. A text-list view provides an alternative way to inspect the same curated relations, but no accessibility evaluation was conducted.
+The small corpus supports inspection of particular relationships; it does not demonstrate scalability to arbitrary topics. The text-list alternative has not undergone an accessibility evaluation.
 
 \subsection{Classroom setting and sequence}
 The activity took place on 4 and 11 June 2026 with 22 Year 11 students aged 16--17 and one computing teacher. Approximately 40 minutes per session were reported for the classroom programme. The computing/AI-literacy topic concerned NLP, transformer architectures, retrieval-augmented generation, and relationships between research papers.
@@ -88,7 +81,7 @@ Ethics approval was obtained for the classroom research. Written parental or gua
 
 \section{Reported classroom experience}
 \subsection{Reported perceived usefulness}
-Table~\ref{tab:ratings} gives the supplied PaperWeave distribution. Its 20 ratings sum to 162, giving a mean of 8.1; both central observations are 8, giving a median of 8. Twenty of 22 invitees responded (90.9\%), and 15 respondents rated usefulness at least 8 (75\%). These calculations verify the aggregate arithmetic, not the underlying response collection.
+Table~\ref{tab:ratings} gives the supplied PaperWeave distribution. The 20 responses give a mean of 8.1 and median of 8; the response rate was 90.9\%, and 15 respondents rated usefulness at least 8 (75\%). These are descriptive calculations from supplied aggregate counts.
 
 \begin{table}[ht]
 \centering
@@ -103,33 +96,12 @@ Count & 0 & 2 & 3 & 8 & 5 & 2\\
 \end{tabular}
 \end{table}
 
-The respondents generally judged the activity useful on the supplied item. The distribution pools feedback from the classroom activities; response counts and ratings are not available separately for the two groups. It therefore cannot establish the perceived benefit of the structured activity alone. Usefulness ratings also do not establish an improvement in reasoning, retention, independent reading, or confidence calibration. The account provides no matched baseline for this rating or delayed measure. Teacher explanations, original-source access and paired discussion are not isolated.
-
-\begin{table*}[t]
-\caption{Selected feedback, paraphrased from the classroom report. No frequencies or verbatim-quotation claims are implied.}
-\label{tab:feedback}
-\begin{tabular}{@{}p{0.29\textwidth}p{0.29\textwidth}p{0.36\textwidth}@{}}
-\toprule
-Feedback in the supplied account & Bounded interpretation & Suggested teaching response\\
-\midrule
-The map helped connect NLP models and papers. & Some learners valued a navigational overview. & Ask for a sentence explaining a selected link, to distinguish navigation from understanding.\\
-Connected papers need not use the same method. & A learner noticed that links can have different meanings. & Contrast a component-use relation with a conceptual comparison using the same response form.\\
-It was difficult to tell whether a relation was supported by its paper. & A short label did not settle the evidential question. & Model how to locate a passage and state what it supports, including conditions.\\
-Different graph views supported different perspectives. & The lenses were perceived as useful for exploration. & Have learners explain why a relation appears under a particular lens.\\
-Checking the original paper was useful. & Source inspection was positively described. & Require a source location alongside the student's claim.\\
-NLP terminology required additional explanations. & Domain vocabulary could obstruct the intended reasoning task. & Supply a brief glossary and begin with one relation before opening the whole map.\\
-\bottomrule
-\end{tabular}
-\end{table*}
+Respondents generally judged the activity useful. Ratings pool both activities; group-specific responses are unavailable. The item provides no baseline, delayed measure or evidence of learning, and it cannot separate the effects of the map, source access, discussion and teacher explanation.
 
 \subsection{Selected feedback and interpretation}
-The supplied examples describe both benefits and difficulties. They are selected feedback, rather than an exhaustive account of all responses. Table~\ref{tab:feedback} connects each paraphrase to a bounded interpretation and a possible teaching response. These responses are recommendations derived from the account; they are not claims that the teacher implemented each adaptation during the sessions.
+Six selected comments describe the value of seeing connections between NLP models, recognising that connected papers need not share a method, exploring different graph views, and consulting original papers. They also describe difficulty deciding whether a relation is supported and understanding technical terminology. These paraphrases identify adoption issues, without establishing their frequency or a measured change in behaviour.
 
-
-
-The terminology difficulty is consequential for adoption. If students cannot distinguish a retriever from a generator, an incorrect relationship judgment may reflect unfamiliar vocabulary rather than weak source evaluation. We would therefore separate a short vocabulary check from the evidence task. Conversely, memorizing the names of the models should not earn credit for evaluating a claim without a source.
-
-The feedback about support for relations highlights a productive tension. The map is useful as an overview, yet its concise labels can encourage reliance on the interface. Making that tension explicit turns the interface into an object of examination: learners should be able to explain why a displayed relation warrants qualification. However, the selected comments do not establish how many students made such a transition, or whether it persisted without the tool.
+The two difficulties require different teaching responses. Unfamiliar terms call for a glossary and a check of component roles; an overbroad interpretation calls for a source-based qualification. Memorising model names should not earn credit for evaluating a claim. Conversely, a vocabulary problem should not automatically be diagnosed as weak evidence reasoning. The four-boundary guide developed below provides concrete prompts for making this distinction.
 
 \subsection{A teacher-guided correction of an overbroad claim}
 The practitioner describes a specific first-session difficulty on 4 June. Several students interpreted the DPR--FiD relationship as meaning that FiD always uses DPR. The teacher paused the activity and directed students to the original FiD paper, asking them to identify the retrieval methods used across datasets and decide whether one method was universal. Students inspected the evidence individually for several minutes, discussed interpretations with a partner, and rewrote the relationship to distinguish DPR for Natural Questions and TriviaQA from BM25 for SQuAD.
@@ -187,6 +159,28 @@ E9 T5--BART & Both admit an encoder-decoder, denoising comparison. & Shared prop
 
 \textbf{Comparison and uncertainty remain legitimate outcomes.} E8 and E9 retain the supported comparison while withholding the stronger inheritance or historical claim. They deliberately avoid treating ``not shown here'' as ``false everywhere.'' This is particularly important for the original inferred T5--BART link, whose source text already requests review. A curator can preserve a useful comparison without upgrading its evidential status.
 
+\subsection{Four inference boundaries across the worked cases}
+The corpus supports a cross-case teaching analysis, rather than only a list of correct relationships. We grouped the changed premises by what a learner must preserve when moving from a source to a claim (Table~\ref{tab:inference}). This grouping was developed from the authored cases; it is neither an empirically validated misconception taxonomy nor a count of student errors. Cases may involve more than one boundary.
+
+\begin{table*}[t]
+\caption{Teaching distinctions derived from the completed corpus. The learner product and feedback actions specify an adoptable practice; they are not measured outcomes.}
+\label{tab:inference}
+\begin{tabular}{@{}p{0.18\textwidth}p{0.27\textwidth}p{0.25\textwidth}p{0.24\textwidth}@{}}
+\toprule
+Inference boundary & Cases and decisive distinction & Required learner product & Targeted teacher response\\
+\midrule
+Component identity and operation & E1, E2, E4, E5: architecture, parameters, initialisation and updates differ. & Name what is shared, loaded, frozen or trained. & Ask which object the verb applies to; compare the two components.\\
+Experimental scope & E3, E6: a stated contributor or dataset choice does not license an exclusive or universal claim. & Restore the omitted contributor or dataset condition. & Ask for a counterexample to ``only'' or ``every.''\\
+Use versus necessity & E7: a T5-based experiment does not make T5 an architectural requirement. & Separate the reported instance from permitted alternatives. & Locate the method's alternatives as well as the experimental setup.\\
+Comparison versus lineage & E8, E9: a comparison does not establish component inheritance or historical influence. & Retain the comparison and identify the missing evidence. & Accept justified uncertainty; request explicit reuse or attribution evidence.\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+These distinctions explain why one generic instruction to ``check the source'' is insufficient. E6 can be refuted by a dataset-specific counterexample; E9 requires withholding a historical inference without denying the conceptual comparison. Both require a qualified claim, but the evidential work differs. An educator can select a pair according to the reasoning to teach and respond to the particular omitted premise rather than supply only the correct label.
+
+The new-source Transformer tasks extend the same discipline to table rows and experimental comparisons. Their causal-attribution item adds a further boundary: changes in several configuration variables do not isolate the effect of one variable. This extension is an authored assessment opportunity, not evidence that students have transferred the practice.
+
 \subsection{What this adds to the classroom account}
 The observed DPR--FiD overgeneralisation motivates the distinction between a conditional claim and a universal one. The completed corpus makes related distinctions inspectable across every current edge, rather than leaving them as future interface suggestions. It also exposes different teaching responses: vocabulary support for a role error, a counterexample for a universal claim, or an additional source for an unsupported historical assertion. These are reasoned adoption implications. The audit does not show that students made every listed error or that the new cards improve their learning.
 
@@ -203,9 +197,7 @@ An educator can reproduce the core reasoning task with the six-paper map, copies
 
 For a new implementation, a practical core uses E1, E6, E7 and E9: component identity, dataset scope, experimental choice versus necessity, and comparison versus history. The other five pairs are extensions for learners ready to inspect training and initialization details. In a two-session adaptation, model one source-based explanation first and then ask learners to resolve contrasting claims with less prompting. Within each task, learners first write their interpretation, inspect the source, explain its warrant and revise or withhold the claim. A partner can challenge an omitted condition before the teacher closes the discussion. This is an adaptation guide, not a minute-by-minute reconstruction of the two reported sessions.
 
-A completed response to the FiD prompt could record: \emph{claim}---FiD always uses DPR; \emph{source}---FiD's experimental setup; \emph{condition}---retrieval differs by dataset; \emph{revision}---DPR is used for Natural Questions and TriviaQA, while BM25 is used for SQuAD; \emph{reason}---one counterexample defeats the universal claim. This worked response is derived from the paper and classroom narrative, not quoted from an individual worksheet. It shows what another teacher can request and assess without relying on a graph's status label.
-
-An adequate response should identify the relationship's meaning, locate pertinent evidence and preserve the relevant condition. A source citation without an explanation is incomplete, as is a plausible explanation supported by the wrong section. Where evidence is insufficient, a justified decision to withhold the claim is acceptable. These are formative criteria for the reusable task, not a retrospectively applied or validated scoring instrument.
+The teacher should require a pertinent source, the decisive condition and an explanation of the judgment. A citation without reasoning is incomplete; a justified decision to withhold a claim is acceptable. The worked examples below make these formative criteria concrete without treating them as a validated scale.
 
 \subsection{Feedback that diagnoses the reasoning difficulty}
 We provide four feedback criteria, adapted to the computing task rather than a validated numeric scale: correct relation meaning, relevant source location, preserved condition and a justified judgment. These distinguish different needs even when two learners choose the same final label. Table~\ref{tab:feedbackguide} gives teacher actions. No earlier worksheet was scored with this guide.
@@ -225,7 +217,6 @@ Treats absent support as refutation & Ask what evidence would settle the claim.\
 \end{tabular}
 \end{table}
 
-For example, ``FiD uses multiple retrievers'' notices a distinction but leaves E6's decisive condition unspecified. A stronger explanation identifies the dataset mapping and why it defeats the universal claim. These are constructed response examples for teacher calibration, not additional participant data. Following the rationale of explanation-scaffolding work~\cite{mcneill}, a later task can remove the response headings while preserving source access. Whether learners then retain the reasoning process requires fresh evidence.
 
 \subsection{Worked explanations and a new-source extension}
 The assessment package makes the difference between a judgment and its warrant explicit. For E6, the constructed answer ``refuted'' supplies a label but no evidence. ``FiD uses more than one retriever'' notices variation but omits the condition. A sufficient explanation identifies FiD \S4, names SQuAD/BM25 as the counterexample, preserves the DPR mapping for Natural Questions and TriviaQA, and explains why one counterexample defeats ``every dataset.'' These levels guide feedback without assigning an unvalidated numerical score. For E9, a justified ``not established'' is preferable to an unsupported claim that historical influence is false.
@@ -251,12 +242,12 @@ A separate student sheet omits the key and asks for a judgment, location and exp
 
 For an evaluation, reserve whole paper pairs from practice rather than splitting contrasting twins between practice and assessment. Check prior familiarity with the new source, document any vocabulary help and teacher prompting, and assess the evidence and explanation separately from label accuracy. An independent rater should calibrate on examples outside the evaluated responses before rating without condition information. The new tasks make such an evaluation feasible to inspect and adapt; their difficulty, scoring reliability and sensitivity to learning remain unmeasured.
 
-\subsection{Pair discussion and reflection}
-The new workbook asks learners to commit an initial interpretation before inspecting the assigned source context. An educator can then invite comparison with a partner's explanation. Each partner should identify the evidence supporting their claim, ask what would make the claim too broad, and record a revision if warranted. A pair may legitimately remain uncertain when the available evidence is insufficient. Agreement should not substitute for source support.
+\subsection{Adapting the practice to another computing topic}
+To prepare a new pair, choose a relationship that serves the lesson objective and inspect its primary source in context. Write the strongest claim that the passage warrants, then change one consequential premise: the component, a condition, the necessity of a choice, or the kind of attribution. Decide whether the altered claim is explicitly refuted or merely not established, and retain a source location and repair rationale. A second reader should check both interpretations before classroom use. This authoring procedure is an adaptation recommendation, not a demonstrated result outside the present corpus.
 
-The classroom account attributes structured prediction, inspection, justification and revision to Group A and describes teacher-facilitated paired discussion. It does not establish a built-in disagreement interface or a common structured protocol for both groups. The new paper materials capture revisions explicitly; embedding that record in the software and evaluating its use remain future work.
+During discussion, learners should commit an interpretation before seeing the key, explain the decisive evidence to a partner, and record a revision or an evidence request. The criterion is whether the explanation addresses the contested premise, not whether partners agree. The reported classroom activity included paired discussion; the current digital prototype does not implement this full response record. The workbook supplies it on paper.
 
-The completed workbook and feedback guide operationalise these fields on paper. A built-in peer interface remains a future software direction, and no inter-rater reliability or outcome estimate is available for the new resource.
+For assessment, separate the contrastive practice cards from independent tasks. Showing both members of a pair can make the intended answer conspicuous. A correct judgment after seeing its contrasting twin is useful practice evidence, but it is weaker evidence of independent reasoning. The supplied new-source sheet omits paired opposites and the key, while preserving source access. Its difficulty and scoring reliability still require evaluation.
 
 \section{Limitations and next steps}
 This account concerns one small cohort, one computing topic, two sessions and one teacher. Both activity groups received the teacher explanation, so the reported episode does not isolate a benefit of the structured activity. The account depends on practitioner-selected observations and feedback, which may overrepresent salient or favourable experiences. The usefulness item combines two perceived benefits, pooled ratings obscure any group-specific pattern, and selected comments do not support frequency claims. The follow-up is described qualitatively, without learning-gain or between-group estimates.
@@ -268,7 +259,7 @@ A fuller evaluation of the reported two-activity design would need group-specifi
 Generative AI (OpenAI ChatGPT/Codex) assisted literature discovery, code development, source inspection, instructional card and rationale authoring, and manuscript drafting and revision. Classroom figures are practitioner-supplied; the technical audit examines a separate artifact snapshot. No human responses were generated for the reported classroom results.
 
 \section{Conclusion}
-PaperWeave turns research-paper links into claims that learners can explain, qualify or withhold. The classroom episode identifies a concrete scope error; the completed nine-link audit and 18-card resource extend it into inspectable computing examples. Versioned source locators, contrasting judgments, worked feedback and a new-source exercise make the activity adoptable without inventing a new mapping or verification algorithm. The contribution is a completed teaching resource informed by bounded classroom reflection. Independent validation of the answer key and evaluation of learning and transfer remain necessary for stronger empirical claims.
+PaperWeave uses research-paper links to teach students how to qualify a claim: identify the component, retain the experimental conditions, distinguish use from necessity, and separate comparison from lineage. The classroom episode identifies a concrete scope error; the completed nine-link audit and 18-card resource extend it into inspectable computing examples. Versioned source locators, contrasting judgments, worked feedback and a new-source exercise make the activity adoptable without inventing a new mapping or verification algorithm. The contribution is a completed teaching resource informed by bounded classroom reflection. Independent validation of the answer key and evaluation of learning and transfer remain necessary for stronger empirical claims.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{references}
 \end{document}

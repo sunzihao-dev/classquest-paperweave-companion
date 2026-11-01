@@ -1,0 +1,32 @@
+{
+  "evidence_type": "Constructed software audit; zero human participants",
+  "frozen_unoffered_retry": {
+    "reported_missing": 3,
+    "actual_offered_in_scenario": 0
+  },
+  "companion_unoffered_retry": {
+    "n": 0,
+    "respondents": 0,
+    "scored": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 0,
+    "missing": 0,
+    "observed_accuracy": null,
+    "scored_coverage": null,
+    "completion_bounds": null,
+    "interpretation": "Coverage and completion bounds concern only learners offered this item; offer does not prove access, reading or learning.",
+    "roster_n": 3,
+    "offered_n": 0,
+    "not_offered": 3
+  },
+  "assignment_states_checked": 19531,
+  "roster_sizes": [
+    0,
+    6
+  ],
+  "accounting_mismatches": 0,
+  "unoffered_extension_violations": 0,
+  "invalid_inputs_rejected": 7,
+  "limits": "Explicit offer records are required. Test enumeration is not a classroom error rate or evidence of pedagogical effectiveness."
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.0 — 1 November 2026
+
+- PaperWeave: sharpen the claim-qualification teaching contribution, connect four inference boundaries to feedback, add two relevant intelligent-bibliometrics sources, and remove repeated prose. The 18-card corpus and classroom results are unchanged.
+- ClassQuest: distinguish earlier classroom use from the later implementation; reproduce an unoffered-retry defect; implement explicit offered-set reporting and validate 19,531 constructed assignments.
+- Update manuscript PDFs (8 and 9 pages), teacher guide, reproduction command and citation formatting.
+
 ## v1.1.0 — 2026-11-01
 
 - Revised ClassQuest (7 pages, 25 references) and PaperWeave (9 pages, 30 references).

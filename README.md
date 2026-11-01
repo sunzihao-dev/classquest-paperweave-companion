@@ -2,14 +2,14 @@
 
 Teaching materials, aggregate classroom feedback, reproducible technical audits and manuscript snapshots for two computing-education practitioner papers.
 
-**Status:** revised manuscripts and supporting resources, version **v1.1.0 (1 November 2026)**. This repository does not assert conference acceptance or ACM publication. The PDF files retain their anonymous review formatting.
+**Status:** revised manuscripts and supporting resources, version **v1.2.0 (1 November 2026)**. This repository does not assert conference acceptance or ACM publication. The PDF files retain their anonymous review formatting.
 
 ## Start here
 
 | Resource | Contents |
 | --- | --- |
-| [ClassQuest paper](output/pdf/classquest_submission.pdf) | *From Source-Based Quizzes to Reteaching Decisions: A Practitioner Guide to ClassQuest* — 7 pages, 25 references |
-| [PaperWeave paper](output/pdf/paperweave_submission.pdf) | *From Research-Paper Links to Defensible Claims: A PaperWeave Teaching Resource* — 9 pages, 30 references |
+| [ClassQuest paper](output/pdf/classquest_submission.pdf) | *From Source-Based Quizzes to Reteaching Decisions: A Practitioner Guide to ClassQuest* — 8 pages, 25 references |
+| [PaperWeave paper](output/pdf/paperweave_submission.pdf) | *Teaching Students to Qualify AI Research Claims with PaperWeave* — 9 pages, 30 references |
 | [PaperWeave teacher guide](teaching_materials/paperweave/teacher_guide.html) | 18 claim cards, all nine original links, source locations, answer rationales and a proposed feedback guide |
 | [Worked feedback and new-source tasks](teaching_materials/paperweave/assessment_guide.html) | Constructed explanations, four Transformer-paper prompts and a separate student sheet; not a validated transfer test |
 | [Student workbook](teaching_materials/paperweave/student_workbook.html) | Printable student-facing activities without answers |
@@ -21,8 +21,8 @@ GitHub shows HTML as source. Download the repository and open the teacher guide 
 
 ## What was evaluated?
 
-- **Earlier classroom use:** practitioner-reported ClassQuest and PaperWeave sessions, aggregate usefulness ratings and classroom reflection. These are separate cohorts with different purposes.
-- **Constructed ClassQuest tests:** deterministic diagnostics of a frozen software snapshot. They contain no learner responses.
+- **Earlier classroom use:** practitioner-reported ClassQuest and PaperWeave sessions, aggregate usefulness ratings and classroom reflection. These are separate cohorts with different purposes. ClassQuest's May sessions used an earlier or separate prototype; they do not evaluate the later October implementation or reporting companion.
+- **Constructed ClassQuest tests:** deterministic diagnostics of a frozen software snapshot, plus companion checks that distinguish not-offered items from offered-but-unanswered items. They contain no learner responses.
 - **PaperWeave artifact audit:** a census of nine curated relationships and a source-traceability check of a later teaching resource.
 - **New teaching materials:** completed after the classroom sessions. They have **not** been evaluated with students. The labels are AI-assisted author judgments, not independently validated expert annotations.
 
