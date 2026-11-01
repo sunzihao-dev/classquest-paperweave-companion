@@ -1,0 +1,460 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{25}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Black and Wiliam}{Black and Wiliam}{2009}]%
+        {black}
+\bibfield{author}{\bibinfo{person}{Paul Black} {and} \bibinfo{person}{Dylan
+  Wiliam}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{{Developing the theory of formative assessment}}.
+\newblock \bibinfo{journal}{\emph{Educational Assessment, Evaluation and
+  Accountability}} \bibinfo{volume}{21}, \bibinfo{number}{1}
+  (\bibinfo{year}{2009}), \bibinfo{pages}{5--31}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11092-008-9068-5}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Denny, Hamer, Luxton-Reilly, and
+  Purchase}{Denny et~al\mbox{.}}{2008}]%
+        {peerwise}
+\bibfield{author}{\bibinfo{person}{Paul Denny}, \bibinfo{person}{John Hamer},
+  \bibinfo{person}{Andrew Luxton-Reilly}, {and} \bibinfo{person}{Helen
+  Purchase}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{PeerWise: Students Sharing Their Multiple Choice
+  Questions}}. In \bibinfo{booktitle}{\emph{Proceedings of the Fourth
+  International Workshop on Computing Education Research}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{51--58}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1404520.1404526}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Denny, Prather, Becker, Finnie-Ansley, Hellas,
+  Leinonen, Luxton-Reilly, Reeves, Santos, and Sarsa}{Denny
+  et~al\mbox{.}}{2024}]%
+        {dennyai}
+\bibfield{author}{\bibinfo{person}{Paul Denny}, \bibinfo{person}{James
+  Prather}, \bibinfo{person}{Brett~A. Becker}, \bibinfo{person}{James
+  Finnie-Ansley}, \bibinfo{person}{Arto Hellas}, \bibinfo{person}{Juho
+  Leinonen}, \bibinfo{person}{Andrew Luxton-Reilly}, \bibinfo{person}{Brent~N.
+  Reeves}, \bibinfo{person}{Eddie~Antonio Santos}, {and} \bibinfo{person}{Sami
+  Sarsa}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{Computing Education in the Era of Generative AI}}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{67},
+  \bibinfo{number}{2} (\bibinfo{year}{2024}), \bibinfo{pages}{56--67}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3624720}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Deslauriers, McCarty, Miller, Callaghan, and
+  Kestin}{Deslauriers et~al\mbox{.}}{2019}]%
+        {deslauriers}
+\bibfield{author}{\bibinfo{person}{Louis Deslauriers},
+  \bibinfo{person}{Logan~S. McCarty}, \bibinfo{person}{Kelly Miller},
+  \bibinfo{person}{Kristina Callaghan}, {and} \bibinfo{person}{Greg Kestin}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Measuring actual learning versus feeling of
+  learning in response to being actively engaged in the classroom}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the National Academy of
+  Sciences}} \bibinfo{volume}{116}, \bibinfo{number}{39}
+  (\bibinfo{year}{2019}), \bibinfo{pages}{19251--19257}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1073/pnas.1821936116}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Doughty, Wan, Bompelli, Qayum, Wang, Zhang,
+  Zheng, Doyle, Sridhar, Agarwal, Bogart, Keylor, Kultur, Savelka, and
+  Sakr}{Doughty et~al\mbox{.}}{2024}]%
+        {doughty}
+\bibfield{author}{\bibinfo{person}{Jacob Doughty}, \bibinfo{person}{Zipiao
+  Wan}, \bibinfo{person}{Anishka Bompelli}, \bibinfo{person}{Jubahed Qayum},
+  \bibinfo{person}{Taozhi Wang}, \bibinfo{person}{Juran Zhang},
+  \bibinfo{person}{Yujia Zheng}, \bibinfo{person}{Aidan Doyle},
+  \bibinfo{person}{Pragnya Sridhar}, \bibinfo{person}{Arav Agarwal},
+  \bibinfo{person}{Christopher Bogart}, \bibinfo{person}{Eric Keylor},
+  \bibinfo{person}{Can Kultur}, \bibinfo{person}{Jaromir Savelka}, {and}
+  \bibinfo{person}{Majd Sakr}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{A Comparative Study of AI-Generated (GPT-4) and
+  Human-crafted MCQs in Programming Education}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 26th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{114--123}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3636243.3636256}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Edwards, Hellas, and Leinonen}{Edwards
+  et~al\mbox{.}}{2025}]%
+        {edwards}
+\bibfield{author}{\bibinfo{person}{John Edwards}, \bibinfo{person}{Arto
+  Hellas}, {and} \bibinfo{person}{Juho Leinonen}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{On the Opportunities of Large Language Models for
+  Programming Process Data}}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  27th Australasian Computing Education Conference}}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{105--113}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3716640.3716652}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hattie and Timperley}{Hattie and
+  Timperley}{2007}]%
+        {hattie}
+\bibfield{author}{\bibinfo{person}{John Hattie} {and} \bibinfo{person}{Helen
+  Timperley}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{{The Power of Feedback}}.
+\newblock \bibinfo{journal}{\emph{Review of Educational Research}}
+  \bibinfo{volume}{77}, \bibinfo{number}{1} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{81--112}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3102/003465430298487}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Holstein, McLaren, and Aleven}{Holstein
+  et~al\mbox{.}}{2019}]%
+        {holstein}
+\bibfield{author}{\bibinfo{person}{Kenneth Holstein}, \bibinfo{person}{Bruce~M.
+  McLaren}, {and} \bibinfo{person}{Vincent Aleven}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Co-Designing a Real-Time Classroom Orchestration
+  Tool to Support Teacher--AI Complementarity}}.
+\newblock \bibinfo{journal}{\emph{Journal of Learning Analytics}}
+  \bibinfo{volume}{6}, \bibinfo{number}{2} (\bibinfo{year}{2019}),
+  \bibinfo{pages}{27--52}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18608/jla.2019.62.3}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Karpicke and Roediger}{Karpicke and
+  Roediger}{2008}]%
+        {karpicke}
+\bibfield{author}{\bibinfo{person}{Jeffrey~D. Karpicke} {and}
+  \bibinfo{person}{Henry~L. Roediger, III}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{The Critical Importance of Retrieval for
+  Learning}}.
+\newblock \bibinfo{journal}{\emph{Science}} \bibinfo{volume}{319},
+  \bibinfo{number}{5865} (\bibinfo{year}{2008}), \bibinfo{pages}{966--968}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1126/science.1152408}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Keuning, Jeuring, and Heeren}{Keuning
+  et~al\mbox{.}}{2018}]%
+        {keuning}
+\bibfield{author}{\bibinfo{person}{Hieke Keuning}, \bibinfo{person}{Johan
+  Jeuring}, {and} \bibinfo{person}{Bastiaan Heeren}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{A Systematic Literature Review of Automated
+  Feedback Generation for Programming Exercises}}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Computing Education}}
+  \bibinfo{volume}{19}, \bibinfo{number}{1}, Article \bibinfo{articleno}{3}
+  (\bibinfo{year}{2018}), \bibinfo{numpages}{43}~pages.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3231711}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Leinonen, Denny, MacNeil, Sarsa, Bernstein,
+  Kim, Tran, and Hellas}{Leinonen et~al\mbox{.}}{2023}]%
+        {leinonen}
+\bibfield{author}{\bibinfo{person}{Juho Leinonen}, \bibinfo{person}{Paul
+  Denny}, \bibinfo{person}{Stephen MacNeil}, \bibinfo{person}{Sami Sarsa},
+  \bibinfo{person}{Seth Bernstein}, \bibinfo{person}{Joanne Kim},
+  \bibinfo{person}{Andrew Tran}, {and} \bibinfo{person}{Arto Hellas}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Comparing Code Explanations Created by Students
+  and Large Language Models}}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2023 Conference on Innovation and Technology in Computer Science Education V.
+  1}}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{124--130}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3587102.3588785}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Matcha, Uzir, Gasevic, and Pardo}{Matcha
+  et~al\mbox{.}}{2020}]%
+        {matcha}
+\bibfield{author}{\bibinfo{person}{Wannisa Matcha},
+  \bibinfo{person}{Noraayu~Ahmad Uzir}, \bibinfo{person}{Dragan Gasevic}, {and}
+  \bibinfo{person}{Abelardo Pardo}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{A Systematic Review of Empirical Studies on
+  Learning Analytics Dashboards: A Self-Regulated Learning Perspective}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Learning Technologies}}
+  \bibinfo{volume}{13}, \bibinfo{number}{2} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{226--245}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/tlt.2019.2916802}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Nicol and Macfarlane-Dick}{Nicol and
+  Macfarlane-Dick}{2006}]%
+        {nicol}
+\bibfield{author}{\bibinfo{person}{David~J. Nicol} {and} \bibinfo{person}{Debra
+  Macfarlane-Dick}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Formative assessment and self-regulated learning: a
+  model and seven principles of good feedback practice}.
+\newblock \bibinfo{journal}{\emph{Studies in Higher Education}}
+  \bibinfo{volume}{31}, \bibinfo{number}{2} (\bibinfo{year}{2006}),
+  \bibinfo{pages}{199--218}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1080/03075070600572090}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Porter, Bailey~Lee, Simon, and Zingaro}{Porter
+  et~al\mbox{.}}{2011}]%
+        {porter}
+\bibfield{author}{\bibinfo{person}{Leo Porter}, \bibinfo{person}{Cynthia
+  Bailey~Lee}, \bibinfo{person}{Beth Simon}, {and} \bibinfo{person}{Daniel
+  Zingaro}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{{Peer instruction: do students really learn from
+  peer discussion in computing?}}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the seventh international workshop on Computing education research}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{45--52}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2016911.2016923}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Qiao, Denny, and Giacaman}{Qiao
+  et~al\mbox{.}}{2025}]%
+        {qiao}
+\bibfield{author}{\bibinfo{person}{Shuying Qiao}, \bibinfo{person}{Paul Denny},
+  {and} \bibinfo{person}{Nasser Giacaman}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{Oversight in Action: Experiences with
+  Instructor-Moderated LLM Responses in an Online Discussion Forum}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 27th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{95--104}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3716640.3716651}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Qiu, Parker, Riegel, Giacaman, Denny, MacNeil,
+  and Prather}{Qiu et~al\mbox{.}}{2026}]%
+        {qiu}
+\bibfield{author}{\bibinfo{person}{Victor Qiu}, \bibinfo{person}{Liam Parker},
+  \bibinfo{person}{Kaitlin Riegel}, \bibinfo{person}{Nasser Giacaman},
+  \bibinfo{person}{Paul Denny}, \bibinfo{person}{Stephen MacNeil}, {and}
+  \bibinfo{person}{James Prather}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{One Line at a Time: Scaffolding Reflective Code
+  Evaluation through Structured AI Assistance}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 28th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{102--111}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3786228.3786243}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Roest, Keuning, and Jeuring}{Roest
+  et~al\mbox{.}}{2024}]%
+        {roest}
+\bibfield{author}{\bibinfo{person}{Lianne Roest}, \bibinfo{person}{Hieke
+  Keuning}, {and} \bibinfo{person}{Johan Jeuring}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{Next-Step Hint Generation for Introductory
+  Programming Using Large Language Models}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 26th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{144--153}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3636243.3636259}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sadler}{Sadler}{1989}]%
+        {sadler}
+\bibfield{author}{\bibinfo{person}{D.~Royce Sadler}.}
+  \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{{Formative assessment and the design of
+  instructional systems}}.
+\newblock \bibinfo{journal}{\emph{Instructional Science}} \bibinfo{volume}{18},
+  \bibinfo{number}{2} (\bibinfo{year}{1989}), \bibinfo{pages}{119--144}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/bf00117714}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sarsa, Denny, Hellas, and Leinonen}{Sarsa
+  et~al\mbox{.}}{2022}]%
+        {sarsa}
+\bibfield{author}{\bibinfo{person}{Sami Sarsa}, \bibinfo{person}{Paul Denny},
+  \bibinfo{person}{Arto Hellas}, {and} \bibinfo{person}{Juho Leinonen}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Automatic Generation of Programming Exercises and
+  Code Explanations Using Large Language Models}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2022 ACM Conference on
+  International Computing Education Research - Volume 1}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{27--43}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3501385.3543957}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Schwendimann, Rodriguez-Triana, Vozniuk,
+  Prieto, Boroujeni, Holzer, Gillet, and Dillenbourg}{Schwendimann
+  et~al\mbox{.}}{2017}]%
+        {schwendimann}
+\bibfield{author}{\bibinfo{person}{Beat~A. Schwendimann},
+  \bibinfo{person}{Maria~Jesus Rodriguez-Triana}, \bibinfo{person}{Andrii
+  Vozniuk}, \bibinfo{person}{Luis~P. Prieto}, \bibinfo{person}{Mina~Shirvani
+  Boroujeni}, \bibinfo{person}{Adrian Holzer}, \bibinfo{person}{Denis Gillet},
+  {and} \bibinfo{person}{Pierre Dillenbourg}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Perceiving Learning at a Glance: A Systematic
+  Literature Review of Learning Dashboard Research}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Learning Technologies}}
+  \bibinfo{volume}{10}, \bibinfo{number}{1} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{30--41}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/tlt.2016.2599522}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Shute}{Shute}{2008}]%
+        {shute}
+\bibfield{author}{\bibinfo{person}{Valerie~J. Shute}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{Focus on Formative Feedback}}.
+\newblock \bibinfo{journal}{\emph{Review of Educational Research}}
+  \bibinfo{volume}{78}, \bibinfo{number}{1} (\bibinfo{year}{2008}),
+  \bibinfo{pages}{153--189}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3102/0034654307313795}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Smith, Wood, Adams, Wieman, Knight, Guild, and
+  Su}{Smith et~al\mbox{.}}{2009}]%
+        {smith}
+\bibfield{author}{\bibinfo{person}{M.~K. Smith}, \bibinfo{person}{W.~B. Wood},
+  \bibinfo{person}{W.~K. Adams}, \bibinfo{person}{C. Wieman},
+  \bibinfo{person}{J.~K. Knight}, \bibinfo{person}{N. Guild}, {and}
+  \bibinfo{person}{T.~T. Su}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{{Why Peer Discussion Improves Student Performance
+  on In-Class Concept Questions}}.
+\newblock \bibinfo{journal}{\emph{Science}} \bibinfo{volume}{323},
+  \bibinfo{number}{5910} (\bibinfo{year}{2009}), \bibinfo{pages}{122--124}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1126/science.1165919}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Verbert, Duval, Klerkx, Govaerts, and
+  Santos}{Verbert et~al\mbox{.}}{2013}]%
+        {verbert}
+\bibfield{author}{\bibinfo{person}{Katrien Verbert}, \bibinfo{person}{Erik
+  Duval}, \bibinfo{person}{Joris Klerkx}, \bibinfo{person}{Sten Govaerts},
+  {and} \bibinfo{person}{José~Luis Santos}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{{Learning Analytics Dashboard Applications}}.
+\newblock \bibinfo{journal}{\emph{American Behavioral Scientist}}
+  \bibinfo{volume}{57}, \bibinfo{number}{10} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{1500--1509}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1177/0002764213479363}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wise and Vytasek}{Wise and Vytasek}{2017}]%
+        {wise}
+\bibfield{author}{\bibinfo{person}{Alyssa~Friend Wise} {and}
+  \bibinfo{person}{Jovita Vytasek}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Learning Analytics Implementation Design}}.
+\newblock In \bibinfo{booktitle}{\emph{Handbook of Learning Analytics}}.
+  \bibinfo{publisher}{Society for Learning Analytics Research (SoLAR)},
+  \bibinfo{pages}{151--160}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18608/hla17.013}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zingaro and Porter}{Zingaro and
+  Porter}{2014}]%
+        {peerinstruction}
+\bibfield{author}{\bibinfo{person}{Daniel Zingaro} {and} \bibinfo{person}{Leo
+  Porter}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Peer Instruction in computing: The value of
+  instructor intervention}.
+\newblock \bibinfo{journal}{\emph{Computers \& Education}}
+  \bibinfo{volume}{71} (\bibinfo{year}{2014}), \bibinfo{pages}{87--96}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.compedu.2013.09.015}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}

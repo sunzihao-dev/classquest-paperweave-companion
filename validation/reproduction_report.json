@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks": [
+    "Aggregate questionnaire arithmetic",
+    "ClassQuest audit and frozen module hashes",
+    "PaperWeave original nine-edge census",
+    "Constructed coverage and paired-retry example",
+    "Teaching resource coverage, IDs, judgments and hash",
+    "Exact source hashes, 15 PDF anchors and byte-identical teaching pack regeneration"
+  ],
+  "classroom_aggregate_summaries": {
+    "classquest": {
+      "n": 20,
+      "mean": 8,
+      "median": 9.0,
+      "at_least_8": 13,
+      "response_rate": 0.8333333333333334
+    },
+    "paperweave": {
+      "n": 20,
+      "mean": 8.1,
+      "median": 8.0,
+      "at_least_8": 15,
+      "response_rate": 0.9090909090909091
+    }
+  },
+  "source_pdf_check_run": true,
+  "limits": "Arithmetic and artifact integrity, not independent participant verification or pedagogical effectiveness"
+}

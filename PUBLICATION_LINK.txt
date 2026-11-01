@@ -1,0 +1,7 @@
+FOR A LATER NON-ANONYMOUS VERSION ONLY
+Do not paste this identifying link into the ACE anonymous review submission.
+
+Suggested artifact-availability wording:
+The companion repository provides manuscript snapshots, aggregate questionnaire counts, reproducible technical audits and the PaperWeave teaching resource: https://github.com/sunzihao-dev/classquest-paperweave-companion (version v1.0.0). Participant-level records are not publicly distributed. The teaching resource was prepared after the reported classroom sessions and has not been evaluated with students.
+
+Use a version tag or commit permalink for the exact snapshot cited. Do not describe the repository as an ACM artifact evaluation or an accepted conference publication.

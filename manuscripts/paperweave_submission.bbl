@@ -1,0 +1,537 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{29}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Ainsworth}{Ainsworth}{2006}]%
+        {ainsworth}
+\bibfield{author}{\bibinfo{person}{Shaaron Ainsworth}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{DeFT: A conceptual framework for considering
+  learning with multiple representations}}.
+\newblock \bibinfo{journal}{\emph{Learning and Instruction}}
+  \bibinfo{volume}{16}, \bibinfo{number}{3} (\bibinfo{year}{2006}),
+  \bibinfo{pages}{183--198}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.learninstruc.2006.03.001}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Britt and Aglinskas}{Britt and
+  Aglinskas}{2002}]%
+        {britt}
+\bibfield{author}{\bibinfo{person}{M.~Anne Britt} {and} \bibinfo{person}{Cindy
+  Aglinskas}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{{Improving Students' Ability to Identify and Use
+  Source Information}}.
+\newblock \bibinfo{journal}{\emph{Cognition and Instruction}}
+  \bibinfo{volume}{20}, \bibinfo{number}{4} (\bibinfo{year}{2002}),
+  \bibinfo{pages}{485--522}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1207/s1532690xci2004_2}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chang, Zhang, Bragg, Head, Lo, Downey, and
+  Weld}{Chang et~al\mbox{.}}{2023}]%
+        {citesee}
+\bibfield{author}{\bibinfo{person}{Joseph~Chee Chang}, \bibinfo{person}{Amy~X.
+  Zhang}, \bibinfo{person}{Jonathan Bragg}, \bibinfo{person}{Andrew Head},
+  \bibinfo{person}{Kyle Lo}, \bibinfo{person}{Doug Downey}, {and}
+  \bibinfo{person}{Daniel~S. Weld}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{CiteSee: Augmenting Citations in Scientific Papers
+  with Persistent and Personalized Historical Context}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2023 CHI Conference on Human
+  Factors in Computing Systems}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--15}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3544548.3580847}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chi and Wylie}{Chi and Wylie}{2014}]%
+        {icap}
+\bibfield{author}{\bibinfo{person}{Michelene T.~H. Chi} {and}
+  \bibinfo{person}{Ruth Wylie}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{{The ICAP Framework: Linking Cognitive Engagement
+  to Active Learning Outcomes}}.
+\newblock \bibinfo{journal}{\emph{Educational Psychologist}}
+  \bibinfo{volume}{49}, \bibinfo{number}{4} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{219--243}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1080/00461520.2014.965823}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Cohan, Ammar, van Zuylen, and Cady}{Cohan
+  et~al\mbox{.}}{2019}]%
+        {scicite}
+\bibfield{author}{\bibinfo{person}{Arman Cohan}, \bibinfo{person}{Waleed
+  Ammar}, \bibinfo{person}{Madeleine van Zuylen}, {and} \bibinfo{person}{Field
+  Cady}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Structural Scaffolds for Citation Intent
+  Classification in Scientific Publications}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2019 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies, Volume 1 (Long and Short Papers)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Minneapolis, Minnesota}, \bibinfo{pages}{3586--3596}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/n19-1361}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Devlin, Chang, Lee, and Toutanova}{Devlin
+  et~al\mbox{.}}{2019}]%
+        {bert}
+\bibfield{author}{\bibinfo{person}{Jacob Devlin}, \bibinfo{person}{Ming-Wei
+  Chang}, \bibinfo{person}{Kenton Lee}, {and} \bibinfo{person}{Kristina
+  Toutanova}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{BERT: Pre-training of Deep Bidirectional
+  Transformers for Language Understanding}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2019 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies, Volume 1 (Long and Short Papers)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Stroudsburg, PA, USA}, \bibinfo{pages}{4171--4186}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/n19-1423}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Druga, Vu, Likhith, and Qiu}{Druga
+  et~al\mbox{.}}{2019}]%
+        {druga}
+\bibfield{author}{\bibinfo{person}{Stefania Druga}, \bibinfo{person}{Sarah~T.
+  Vu}, \bibinfo{person}{Eesh Likhith}, {and} \bibinfo{person}{Tammy Qiu}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Inclusive AI literacy for kids around the world}}.
+  In \bibinfo{booktitle}{\emph{Proceedings of FabLearn 2019}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{104--111}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3311890.3311904}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Fok, Kambhamettu, Soldaini, Bragg, Lo, Hearst,
+  Head, and Weld}{Fok et~al\mbox{.}}{2023}]%
+        {scim}
+\bibfield{author}{\bibinfo{person}{Raymond Fok}, \bibinfo{person}{Hita
+  Kambhamettu}, \bibinfo{person}{Luca Soldaini}, \bibinfo{person}{Jonathan
+  Bragg}, \bibinfo{person}{Kyle Lo}, \bibinfo{person}{Marti~A. Hearst},
+  \bibinfo{person}{Andrew Head}, {and} \bibinfo{person}{Daniel~S. Weld}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Scim: Intelligent Skimming Support for Scientific
+  Papers}}. In \bibinfo{booktitle}{\emph{Proceedings of the 28th International
+  Conference on Intelligent User Interfaces}}. \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{476--490}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3581641.3584034}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Goldman, Braasch, Wiley, Graesser, and
+  Brodowinska}{Goldman et~al\mbox{.}}{2012}]%
+        {goldman}
+\bibfield{author}{\bibinfo{person}{Susan~R. Goldman},
+  \bibinfo{person}{Jason~L.G. Braasch}, \bibinfo{person}{Jennifer Wiley},
+  \bibinfo{person}{Arthur~C. Graesser}, {and} \bibinfo{person}{Kamila
+  Brodowinska}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{Comprehending and Learning From Internet Sources:
+  Processing Patterns of Better and Poorer Learners}}.
+\newblock \bibinfo{journal}{\emph{Reading Research Quarterly}}
+  \bibinfo{volume}{47}, \bibinfo{number}{4} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{356--381}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1002/rrq.027}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Head, Lo, Kang, Fok, Skjonsberg, Weld, and
+  Hearst}{Head et~al\mbox{.}}{2021}]%
+        {scholarphi}
+\bibfield{author}{\bibinfo{person}{Andrew Head}, \bibinfo{person}{Kyle Lo},
+  \bibinfo{person}{Dongyeop Kang}, \bibinfo{person}{Raymond Fok},
+  \bibinfo{person}{Sam Skjonsberg}, \bibinfo{person}{Daniel~S. Weld}, {and}
+  \bibinfo{person}{Marti~A. Hearst}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Augmenting Scientific Papers with Just-in-Time,
+  Position-Sensitive Definitions of Terms and Symbols}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 CHI Conference on Human
+  Factors in Computing Systems}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--18}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3411764.3445648}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Izacard and Grave}{Izacard and Grave}{2021}]%
+        {fid}
+\bibfield{author}{\bibinfo{person}{Gautier Izacard} {and}
+  \bibinfo{person}{Edouard Grave}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Leveraging Passage Retrieval with Generative Models
+  for Open Domain Question Answering}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 16th Conference of the European Chapter of the Association for
+  Computational Linguistics: Main Volume}}. \bibinfo{publisher}{Association for
+  Computational Linguistics}, \bibinfo{address}{Online},
+  \bibinfo{pages}{874--880}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.eacl-main.74}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kang, Wu, Chang, and Kittur}{Kang
+  et~al\mbox{.}}{2023}]%
+        {synergi}
+\bibfield{author}{\bibinfo{person}{Hyeonsu~B. Kang},
+  \bibinfo{person}{Sherry~Tongshuang Wu}, \bibinfo{person}{Joseph~Chee Chang},
+  {and} \bibinfo{person}{Aniket Kittur}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Synergi: A Mixed-Initiative System for Scholarly
+  Synthesis and Sensemaking}}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  36th Annual ACM Symposium on User Interface Software and Technology}}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--19}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3586183.3606759}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Karpukhin, Oguz, Min, Lewis, Wu, Edunov, Chen,
+  and tau Yih}{Karpukhin et~al\mbox{.}}{2020}]%
+        {dpr}
+\bibfield{author}{\bibinfo{person}{Vladimir Karpukhin}, \bibinfo{person}{Barlas
+  Oguz}, \bibinfo{person}{Sewon Min}, \bibinfo{person}{Patrick Lewis},
+  \bibinfo{person}{Ledell Wu}, \bibinfo{person}{Sergey Edunov},
+  \bibinfo{person}{Danqi Chen}, {and} \bibinfo{person}{Wen tau Yih}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Dense Passage Retrieval for Open-Domain Question
+  Answering}}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference
+  on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{6769--6781}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-main.550}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lee, Kang, Latzke, Kim, Bragg, Chang, and
+  Siangliulue}{Lee et~al\mbox{.}}{2024}]%
+        {paperweaver}
+\bibfield{author}{\bibinfo{person}{Yoonjoo Lee}, \bibinfo{person}{Hyeonsu~B.
+  Kang}, \bibinfo{person}{Matt Latzke}, \bibinfo{person}{Juho Kim},
+  \bibinfo{person}{Jonathan Bragg}, \bibinfo{person}{Joseph~Chee Chang}, {and}
+  \bibinfo{person}{Pao Siangliulue}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{PaperWeaver: Enriching Topical Paper Alerts by
+  Contextualizing Recommended Papers with User-collected Papers}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the CHI Conference on Human Factors
+  in Computing Systems}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--19}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3613904.3642196}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lewis, Liu, Goyal, Ghazvininejad, Mohamed,
+  Levy, Stoyanov, and Zettlemoyer}{Lewis et~al\mbox{.}}{2020a}]%
+        {bart}
+\bibfield{author}{\bibinfo{person}{Mike Lewis}, \bibinfo{person}{Yinhan Liu},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Marjan Ghazvininejad},
+  \bibinfo{person}{Abdelrahman Mohamed}, \bibinfo{person}{Omer Levy},
+  \bibinfo{person}{Veselin Stoyanov}, {and} \bibinfo{person}{Luke
+  Zettlemoyer}.} \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{{BART: Denoising Sequence-to-Sequence Pre-training
+  for Natural Language Generation, Translation, and Comprehension}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 58th Annual Meeting of the
+  Association for Computational Linguistics}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{address}{Stroudsburg, PA, USA},
+  \bibinfo{pages}{7871--7880}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.acl-main.703}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lewis, Perez, Piktus, Petroni, Karpukhin,
+  Goyal, Kuttler, Lewis, tau Yih, Rocktaschel, Riedel, and Kiela}{Lewis
+  et~al\mbox{.}}{2020b}]%
+        {rag}
+\bibfield{author}{\bibinfo{person}{Patrick Lewis}, \bibinfo{person}{Ethan
+  Perez}, \bibinfo{person}{Aleksandra Piktus}, \bibinfo{person}{Fabio Petroni},
+  \bibinfo{person}{Vladimir Karpukhin}, \bibinfo{person}{Naman Goyal},
+  \bibinfo{person}{Heinrich Kuttler}, \bibinfo{person}{Mike Lewis},
+  \bibinfo{person}{Wen tau Yih}, \bibinfo{person}{Tim Rocktaschel},
+  \bibinfo{person}{Sebastian Riedel}, {and} \bibinfo{person}{Douwe Kiela}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{{Retrieval-Augmented Generation for
+  Knowledge-Intensive NLP Tasks}}. In \bibinfo{booktitle}{\emph{Advances in
+  Neural Information Processing Systems}}, Vol.~\bibinfo{volume}{33}.
+  \bibinfo{publisher}{Curran Associates, Inc.}, \bibinfo{address}{Red Hook, NY,
+  USA}, \bibinfo{pages}{9459--9474}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Long and Magerko}{Long and Magerko}{2020}]%
+        {long}
+\bibfield{author}{\bibinfo{person}{Duri Long} {and} \bibinfo{person}{Brian
+  Magerko}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{What is AI Literacy? Competencies and Design
+  Considerations}}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020 CHI
+  Conference on Human Factors in Computing Systems}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--16}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3313831.3376727}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Mannila, Hallström, Nordlöf, Heintz,
+  Sperling, and Stenliden}{Mannila et~al\mbox{.}}{2025}]%
+        {mannila}
+\bibfield{author}{\bibinfo{person}{Linda Mannila}, \bibinfo{person}{Jonas
+  Hallström}, \bibinfo{person}{Charlotta Nordlöf}, \bibinfo{person}{Fredrik
+  Heintz}, \bibinfo{person}{Katarina Sperling}, {and} \bibinfo{person}{Linnéa
+  Stenliden}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{Framing AI Literacy for K-12 Education: Insights
+  from Multi-Perspective and International Stakeholders}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 27th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{85--94}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3716640.3716650}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Mayer and Moreno}{Mayer and Moreno}{2003}]%
+        {mayer}
+\bibfield{author}{\bibinfo{person}{Richard~E. Mayer} {and}
+  \bibinfo{person}{Roxana Moreno}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{{Nine Ways to Reduce Cognitive Load in Multimedia
+  Learning}}.
+\newblock \bibinfo{journal}{\emph{Educational Psychologist}}
+  \bibinfo{volume}{38}, \bibinfo{number}{1} (\bibinfo{year}{2003}),
+  \bibinfo{pages}{43--52}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1207/s15326985ep3801_6}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{McGrew, Breakstone, Ortega, Smith, and
+  Wineburg}{McGrew et~al\mbox{.}}{2018}]%
+        {mcgrew}
+\bibfield{author}{\bibinfo{person}{Sarah McGrew}, \bibinfo{person}{Joel
+  Breakstone}, \bibinfo{person}{Teresa Ortega}, \bibinfo{person}{Mark Smith},
+  {and} \bibinfo{person}{Sam Wineburg}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Can Students Evaluate Online Sources? Learning
+  From Assessments of Civic Online Reasoning}}.
+\newblock \bibinfo{journal}{\emph{Theory \&amp; Research in Social Education}}
+  \bibinfo{volume}{46}, \bibinfo{number}{2} (\bibinfo{year}{2018}),
+  \bibinfo{pages}{165--193}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1080/00933104.2017.1416320}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{McNeill, Lizotte, Krajcik, and Marx}{McNeill
+  et~al\mbox{.}}{2006}]%
+        {mcneill}
+\bibfield{author}{\bibinfo{person}{Katherine~L. McNeill},
+  \bibinfo{person}{David~J. Lizotte}, \bibinfo{person}{Joseph Krajcik}, {and}
+  \bibinfo{person}{Ronald~W. Marx}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{Supporting Students' Construction of Scientific
+  Explanations by Fading Scaffolds in Instructional Materials}}.
+\newblock \bibinfo{journal}{\emph{Journal of the Learning Sciences}}
+  \bibinfo{volume}{15}, \bibinfo{number}{2} (\bibinfo{year}{2006}),
+  \bibinfo{pages}{153--191}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1207/s15327809jls1502_1}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Ng, Leung, Chu, and Qiao}{Ng
+  et~al\mbox{.}}{2021}]%
+        {ng}
+\bibfield{author}{\bibinfo{person}{Davy Tsz~Kit Ng}, \bibinfo{person}{Jac
+  Ka~Lok Leung}, \bibinfo{person}{Samuel Kai~Wah Chu}, {and}
+  \bibinfo{person}{Maggie~Shen Qiao}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Conceptualizing AI literacy: An exploratory
+  review}}.
+\newblock \bibinfo{journal}{\emph{Computers and Education: Artificial
+  Intelligence}}  \bibinfo{volume}{2} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{100041}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.caeai.2021.100041}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Qiu, Parker, Riegel, Giacaman, Denny, MacNeil,
+  and Prather}{Qiu et~al\mbox{.}}{2026}]%
+        {qiu}
+\bibfield{author}{\bibinfo{person}{Victor Qiu}, \bibinfo{person}{Liam Parker},
+  \bibinfo{person}{Kaitlin Riegel}, \bibinfo{person}{Nasser Giacaman},
+  \bibinfo{person}{Paul Denny}, \bibinfo{person}{Stephen MacNeil}, {and}
+  \bibinfo{person}{James Prather}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{One Line at a Time: Scaffolding Reflective Code
+  Evaluation through Structured AI Assistance}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 28th Australasian Computing
+  Education Conference}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{102--111}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3786228.3786243}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Rachatasumrit, Bragg, Zhang, and
+  Weld}{Rachatasumrit et~al\mbox{.}}{2022}]%
+        {citeread}
+\bibfield{author}{\bibinfo{person}{Napol Rachatasumrit},
+  \bibinfo{person}{Jonathan Bragg}, \bibinfo{person}{Amy~X. Zhang}, {and}
+  \bibinfo{person}{Daniel~S Weld}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{CiteRead: Integrating Localized Citation Contexts
+  into Scientific Paper Reading}}. In \bibinfo{booktitle}{\emph{27th
+  International Conference on Intelligent User Interfaces}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{707--719}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3490099.3511162}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Raffel, Shazeer, Roberts, Lee, Narang, Matena,
+  Zhou, Li, and Liu}{Raffel et~al\mbox{.}}{2020}]%
+        {t5}
+\bibfield{author}{\bibinfo{person}{Colin Raffel}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Adam Roberts}, \bibinfo{person}{Katherine Lee},
+  \bibinfo{person}{Sharan Narang}, \bibinfo{person}{Michael Matena},
+  \bibinfo{person}{Yanqi Zhou}, \bibinfo{person}{Wei Li}, {and}
+  \bibinfo{person}{Peter~J. Liu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Exploring the Limits of Transfer Learning with a
+  Unified Text-to-Text Transformer}.
+\newblock \bibinfo{journal}{\emph{Journal of Machine Learning Research}}
+  \bibinfo{volume}{21}, \bibinfo{number}{140} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{1--67}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Touretzky, Gardner-McCune, Martin, and
+  Seehorn}{Touretzky et~al\mbox{.}}{2019}]%
+        {touretzky}
+\bibfield{author}{\bibinfo{person}{David Touretzky}, \bibinfo{person}{Christina
+  Gardner-McCune}, \bibinfo{person}{Fred Martin}, {and}
+  \bibinfo{person}{Deborah Seehorn}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Envisioning AI for K-12: What Should Every Child
+  Know about AI?}}
+\newblock \bibinfo{journal}{\emph{Proceedings of the AAAI Conference on
+  Artificial Intelligence}} \bibinfo{volume}{33}, \bibinfo{number}{01}
+  (\bibinfo{year}{2019}), \bibinfo{pages}{9795--9799}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/aaai.v33i01.33019795}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wadden, Lin, Lo, Wang, van Zuylen, Cohan, and
+  Hajishirzi}{Wadden et~al\mbox{.}}{2020}]%
+        {scifact}
+\bibfield{author}{\bibinfo{person}{David Wadden}, \bibinfo{person}{Shanchuan
+  Lin}, \bibinfo{person}{Kyle Lo}, \bibinfo{person}{Lucy~Lu Wang},
+  \bibinfo{person}{Madeleine van Zuylen}, \bibinfo{person}{Arman Cohan}, {and}
+  \bibinfo{person}{Hannaneh Hajishirzi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Fact or Fiction: Verifying Scientific Claims}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference on Empirical
+  Methods in Natural Language Processing (EMNLP)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{7534--7550}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-main.609}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wineburg}{Wineburg}{1991}]%
+        {wineburg}
+\bibfield{author}{\bibinfo{person}{Samuel~S. Wineburg}.}
+  \bibinfo{year}{1991}\natexlab{}.
+\newblock \showarticletitle{{Historical problem solving: A study of the
+  cognitive processes used in the evaluation of documentary and pictorial
+  evidence.}}
+\newblock \bibinfo{journal}{\emph{Journal of Educational Psychology}}
+  \bibinfo{volume}{83}, \bibinfo{number}{1} (\bibinfo{year}{1991}),
+  \bibinfo{pages}{73--87}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1037/0022-0663.83.1.73}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zingaro and Porter}{Zingaro and
+  Porter}{2014}]%
+        {peerinstruction}
+\bibfield{author}{\bibinfo{person}{Daniel Zingaro} {and} \bibinfo{person}{Leo
+  Porter}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Peer Instruction in computing: The value of
+  instructor intervention}.
+\newblock \bibinfo{journal}{\emph{Computers \& Education}}
+  \bibinfo{volume}{71} (\bibinfo{year}{2014}), \bibinfo{pages}{87--96}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.compedu.2013.09.015}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}

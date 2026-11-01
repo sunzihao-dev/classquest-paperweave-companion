@@ -1,0 +1,19 @@
+id,pair,claim,judgment,passages
+C01,E4,RAG fine-tunes both the DPR question encoder and the document encoder in its reported training procedure.,refuted,"rag_retriever, rag_training"
+C02,E9,Their shared encoder-decoder and denoising properties establish that T5 historically influenced BART.,not established,"t5_model, t5_inspiration, t5_dropout, bart_model"
+C03,E7,The FiD method requires T5 and excludes BART as a possible sequence-to-sequence model.,refuted,"fid_architecture, fid_initialization"
+C04,E5,RAG uses a BART-large generator and fine-tunes that generator in the reported procedure.,supported,"rag_generator, rag_training"
+C05,E5,RAG keeps its BART generator parameters fixed throughout the reported fine-tuning.,refuted,"rag_generator, rag_training"
+C06,E4,RAG initializes its retriever from DPR and keeps the document encoder fixed during its reported fine-tuning.,supported,"rag_retriever, rag_training"
+C07,E1,The reported DPR retriever shares one BERT encoder parameter set between questions and passages.,refuted,dpr_enc
+C08,E3,T5 describes BERT as the sole inspiration for its baseline denoising objective.,refuted,"t5_inspiration, t5_dropout"
+C09,E3,T5 describes its baseline denoising objective as inspired by BERT masked language modelling and word dropout.,supported,"t5_inspiration, t5_dropout"
+C10,E9,T5 and BART can be compared as encoder-decoder approaches with denoising pre-training.,supported,"t5_model, t5_inspiration, t5_dropout, bart_model"
+C11,E6,"FiD reports DPR retrieval for Natural Questions and TriviaQA, and BM25 for SQuAD.",supported,fid_retrieval
+C12,E8,The comparison establishes that FiD loads a previously trained RAG system as a component.,not established,"fid_compare, fid_joint, fid_initialization"
+C13,E8,The FiD paper compares its handling of retrieved passages with RAG and describes joint processing in the decoder.,supported,"fid_compare, fid_joint, fid_initialization"
+C14,E6,FiD uses DPR for every dataset reported in the paper.,refuted,fid_retrieval
+C15,E1,The reported DPR retriever uses two independent BERT encoders for questions and passages.,supported,dpr_enc
+C16,E7,The reported FiD experiments initialize from T5; the method description also allows a model such as BART.,supported,"fid_architecture, fid_initialization"
+C17,E2,BART is initialized by loading a released BERT checkpoint.,refuted,"bart_compare, bart_init"
+C18,E2,The BART paper compares its bidirectional encoder with BERT within a broader sequence-to-sequence architecture.,supported,"bart_compare, bart_init"

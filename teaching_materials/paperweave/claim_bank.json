@@ -1,0 +1,506 @@
+{
+  "version": "2026-11-01.1",
+  "evidence_type": "Author-constructed instructional resource; no new classroom observations",
+  "judgment_scope": "Support, refutation or non-establishment relative to the named source context, not global truth",
+  "documents": {
+    "dpr": {
+      "title": "DPR",
+      "version": "ACL Anthology proceedings PDF, 2020",
+      "url": "https://aclanthology.org/2020.emnlp-main.550.pdf",
+      "sha256": "2abfc7991519be2b8ce30215905516fdb593218b7bf59e50ece0d8a088a7c4d5"
+    },
+    "bart": {
+      "title": "BART",
+      "version": "ACL Anthology proceedings PDF, 2020",
+      "url": "https://aclanthology.org/2020.acl-main.703.pdf",
+      "sha256": "3562c723fe7bebb8b362533122b3ca5c065037c8e8d67460654cf3740652bb59"
+    },
+    "t5": {
+      "title": "T5",
+      "version": "JMLR 21(140), 2020 PDF",
+      "url": "https://www.jmlr.org/papers/volume21/20-074/20-074.pdf",
+      "sha256": "66cf9f77e46691853703eb6982dea337a53361d509fb99be719b5410c5467e41"
+    },
+    "rag": {
+      "title": "RAG",
+      "version": "arXiv:2005.11401v4, 12 April 2021",
+      "url": "https://arxiv.org/pdf/2005.11401v4",
+      "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"
+    },
+    "fid": {
+      "title": "FiD",
+      "version": "ACL Anthology proceedings PDF, 2021",
+      "url": "https://aclanthology.org/2021.eacl-main.74.pdf",
+      "sha256": "a0b8708f35c78bc5799322a91e042f33233a5e48226c400843082c8a76b01175"
+    }
+  },
+  "passages": {
+    "dpr_enc": {
+      "document": "dpr",
+      "pdf_page": 3,
+      "section": "3.1, Encoders",
+      "anchor": "two independent BERT"
+    },
+    "bart_compare": {
+      "document": "bart",
+      "pdf_page": 1,
+      "section": "Abstract and 1",
+      "anchor": "generalizing BERT"
+    },
+    "bart_init": {
+      "document": "bart",
+      "pdf_page": 2,
+      "section": "2.1",
+      "anchor": "initialise parameters"
+    },
+    "bart_model": {
+      "document": "bart",
+      "pdf_page": 2,
+      "section": "2",
+      "anchor": "sequence-to-sequence model"
+    },
+    "t5_inspiration": {
+      "document": "t5",
+      "pdf_page": 12,
+      "section": "3.1.4 (continues on page 13)",
+      "anchor": "Inspired by BERT"
+    },
+    "t5_dropout": {
+      "document": "t5",
+      "pdf_page": 13,
+      "section": "3.1.4",
+      "anchor": "word dropout"
+    },
+    "t5_model": {
+      "document": "t5",
+      "pdf_page": 11,
+      "section": "3.1.1",
+      "anchor": "standard encoder-decoder Transformer"
+    },
+    "rag_retriever": {
+      "document": "rag",
+      "pdf_page": 3,
+      "section": "2.2",
+      "anchor": "pre-trained bi-encoder"
+    },
+    "rag_generator": {
+      "document": "rag",
+      "pdf_page": 3,
+      "section": "2.3",
+      "anchor": "We use BART-large"
+    },
+    "rag_training": {
+      "document": "rag",
+      "pdf_page": 4,
+      "section": "2.4",
+      "anchor": "keep the document encoder"
+    },
+    "fid_compare": {
+      "document": "fid",
+      "pdf_page": 2,
+      "section": "2",
+      "anchor": "differs from these works"
+    },
+    "fid_architecture": {
+      "document": "fid",
+      "pdf_page": 3,
+      "section": "3, Reading",
+      "anchor": "such as T5 or"
+    },
+    "fid_joint": {
+      "document": "fid",
+      "pdf_page": 3,
+      "section": "3, Reading",
+      "anchor": "jointly in the decoder"
+    },
+    "fid_initialization": {
+      "document": "fid",
+      "pdf_page": 4,
+      "section": "4, Technical details",
+      "anchor": "initialize our models"
+    },
+    "fid_retrieval": {
+      "document": "fid",
+      "pdf_page": 4,
+      "section": "4, Technical details",
+      "anchor": "with BM25 for SQuAD"
+    }
+  },
+  "pairs": [
+    {
+      "id": "E1",
+      "edge": [
+        "bert",
+        "dpr"
+      ],
+      "relation": "component use",
+      "passages": [
+        "dpr_enc"
+      ],
+      "supported": "The reported DPR retriever uses two independent BERT encoders for questions and passages.",
+      "challenge": "The reported DPR retriever shares one BERT encoder parameter set between questions and passages.",
+      "verdict": "refuted",
+      "change": "independent components to shared parameters",
+      "rationale": "The architecture description explicitly specifies independent networks. Sharing the BERT architecture does not entail sharing one parameter set.",
+      "repair": "Restore the distinction between the question encoder and the passage encoder.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E2",
+      "edge": [
+        "bert",
+        "bart"
+      ],
+      "relation": "author-stated conceptual relation",
+      "passages": [
+        "bart_compare",
+        "bart_init"
+      ],
+      "supported": "The BART paper compares its bidirectional encoder with BERT within a broader sequence-to-sequence architecture.",
+      "challenge": "BART is initialized by loading a released BERT checkpoint.",
+      "verdict": "refuted",
+      "change": "architectural comparison to checkpoint reuse",
+      "rationale": "The comparison concerns architecture. The model section separately specifies random parameter initialization, rather than BERT checkpoint initialization.",
+      "repair": "Describe the architectural comparison without asserting checkpoint reuse.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E3",
+      "edge": [
+        "bert",
+        "t5"
+      ],
+      "relation": "author-stated conceptual relation",
+      "passages": [
+        "t5_inspiration",
+        "t5_dropout"
+      ],
+      "supported": "T5 describes its baseline denoising objective as inspired by BERT masked language modelling and word dropout.",
+      "challenge": "T5 describes BERT as the sole inspiration for its baseline denoising objective.",
+      "verdict": "refuted",
+      "change": "multiple influences to sole influence",
+      "rationale": "The sentence crosses a page boundary and names a second influence. Reading only its first page drops a consequential part of the statement.",
+      "repair": "Retain both named influences and restrict the claim to the baseline objective.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E4",
+      "edge": [
+        "dpr",
+        "rag"
+      ],
+      "relation": "component use",
+      "passages": [
+        "rag_retriever",
+        "rag_training"
+      ],
+      "supported": "RAG initializes its retriever from DPR and keeps the document encoder fixed during its reported fine-tuning.",
+      "challenge": "RAG fine-tunes both the DPR question encoder and the document encoder in its reported training procedure.",
+      "verdict": "refuted",
+      "change": "component use to unrestricted updating",
+      "rationale": "Initialization and subsequent training are different claims. The training subsection identifies the fixed document encoder.",
+      "repair": "Separate initialization from fine-tuning and preserve which encoder stays fixed.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E5",
+      "edge": [
+        "bart",
+        "rag"
+      ],
+      "relation": "component use",
+      "passages": [
+        "rag_generator",
+        "rag_training"
+      ],
+      "supported": "RAG uses a BART-large generator and fine-tunes that generator in the reported procedure.",
+      "challenge": "RAG keeps its BART generator parameters fixed throughout the reported fine-tuning.",
+      "verdict": "refuted",
+      "change": "fine-tuned component to frozen component",
+      "rationale": "The generator and training subsections identify both the component and its update policy.",
+      "repair": "State that the generator is fine-tuned; do not transfer the document encoder policy to it.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E6",
+      "edge": [
+        "dpr",
+        "fid"
+      ],
+      "relation": "conditional use",
+      "passages": [
+        "fid_retrieval"
+      ],
+      "supported": "FiD reports DPR retrieval for Natural Questions and TriviaQA, and BM25 for SQuAD.",
+      "challenge": "FiD uses DPR for every dataset reported in the paper.",
+      "verdict": "refuted",
+      "change": "dataset-qualified use to universal use",
+      "rationale": "The SQuAD configuration supplies an explicit counterexample to the universal statement.",
+      "repair": "Restore the dataset-to-retriever mapping.",
+      "classroom_connection": "The overgeneralisation is described in the practitioner account; these card wordings are authored paraphrases, not student quotations.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E7",
+      "edge": [
+        "t5",
+        "fid"
+      ],
+      "relation": "experimental instantiation",
+      "passages": [
+        "fid_architecture",
+        "fid_initialization"
+      ],
+      "supported": "The reported FiD experiments initialize from T5; the method description also allows a model such as BART.",
+      "challenge": "The FiD method requires T5 and excludes BART as a possible sequence-to-sequence model.",
+      "verdict": "refuted",
+      "change": "experimental choice to architectural necessity",
+      "rationale": "The method explicitly gives another possible model. An experimental instantiation is not an architectural requirement.",
+      "repair": "Keep the T5 initialization claim within the scope of the reported experiments.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E8",
+      "edge": [
+        "rag",
+        "fid"
+      ],
+      "relation": "author-stated conceptual relation",
+      "passages": [
+        "fid_compare",
+        "fid_joint",
+        "fid_initialization"
+      ],
+      "supported": "The FiD paper compares its handling of retrieved passages with RAG and describes joint processing in the decoder.",
+      "challenge": "The comparison establishes that FiD loads a previously trained RAG system as a component.",
+      "verdict": "not established",
+      "change": "comparison to component inheritance",
+      "rationale": "The comparison and method description do not establish the asserted component inheritance. Withhold that claim; a comparison is not a lineage record.",
+      "repair": "Retain the processing comparison. To assert reuse, obtain explicit implementation or initialization evidence.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    },
+    {
+      "id": "E9",
+      "edge": [
+        "t5",
+        "bart"
+      ],
+      "relation": "curator comparison",
+      "passages": [
+        "t5_model",
+        "t5_inspiration",
+        "t5_dropout",
+        "bart_model"
+      ],
+      "supported": "T5 and BART can be compared as encoder-decoder approaches with denoising pre-training.",
+      "challenge": "Their shared encoder-decoder and denoising properties establish that T5 historically influenced BART.",
+      "verdict": "not established",
+      "change": "similarity to historical influence",
+      "rationale": "Shared properties support an analytical comparison. They do not supply evidence of the direction or existence of historical influence.",
+      "repair": "Label the relation as a curator comparison; request a historical or author-attribution source before claiming influence.",
+      "review_status": "AI-assisted source inspection; no independent human annotation"
+    }
+  ],
+  "cards": [
+    {
+      "pair": "E4",
+      "claim": "RAG fine-tunes both the DPR question encoder and the document encoder in its reported training procedure.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "rag_retriever",
+        "rag_training"
+      ],
+      "id": "C01"
+    },
+    {
+      "pair": "E9",
+      "claim": "Their shared encoder-decoder and denoising properties establish that T5 historically influenced BART.",
+      "judgment": "not established",
+      "variant": "challenge",
+      "passages": [
+        "t5_model",
+        "t5_inspiration",
+        "t5_dropout",
+        "bart_model"
+      ],
+      "id": "C02"
+    },
+    {
+      "pair": "E7",
+      "claim": "The FiD method requires T5 and excludes BART as a possible sequence-to-sequence model.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "fid_architecture",
+        "fid_initialization"
+      ],
+      "id": "C03"
+    },
+    {
+      "pair": "E5",
+      "claim": "RAG uses a BART-large generator and fine-tunes that generator in the reported procedure.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "rag_generator",
+        "rag_training"
+      ],
+      "id": "C04"
+    },
+    {
+      "pair": "E5",
+      "claim": "RAG keeps its BART generator parameters fixed throughout the reported fine-tuning.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "rag_generator",
+        "rag_training"
+      ],
+      "id": "C05"
+    },
+    {
+      "pair": "E4",
+      "claim": "RAG initializes its retriever from DPR and keeps the document encoder fixed during its reported fine-tuning.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "rag_retriever",
+        "rag_training"
+      ],
+      "id": "C06"
+    },
+    {
+      "pair": "E1",
+      "claim": "The reported DPR retriever shares one BERT encoder parameter set between questions and passages.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "dpr_enc"
+      ],
+      "id": "C07"
+    },
+    {
+      "pair": "E3",
+      "claim": "T5 describes BERT as the sole inspiration for its baseline denoising objective.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "t5_inspiration",
+        "t5_dropout"
+      ],
+      "id": "C08"
+    },
+    {
+      "pair": "E3",
+      "claim": "T5 describes its baseline denoising objective as inspired by BERT masked language modelling and word dropout.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "t5_inspiration",
+        "t5_dropout"
+      ],
+      "id": "C09"
+    },
+    {
+      "pair": "E9",
+      "claim": "T5 and BART can be compared as encoder-decoder approaches with denoising pre-training.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "t5_model",
+        "t5_inspiration",
+        "t5_dropout",
+        "bart_model"
+      ],
+      "id": "C10"
+    },
+    {
+      "pair": "E6",
+      "claim": "FiD reports DPR retrieval for Natural Questions and TriviaQA, and BM25 for SQuAD.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "fid_retrieval"
+      ],
+      "id": "C11"
+    },
+    {
+      "pair": "E8",
+      "claim": "The comparison establishes that FiD loads a previously trained RAG system as a component.",
+      "judgment": "not established",
+      "variant": "challenge",
+      "passages": [
+        "fid_compare",
+        "fid_joint",
+        "fid_initialization"
+      ],
+      "id": "C12"
+    },
+    {
+      "pair": "E8",
+      "claim": "The FiD paper compares its handling of retrieved passages with RAG and describes joint processing in the decoder.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "fid_compare",
+        "fid_joint",
+        "fid_initialization"
+      ],
+      "id": "C13"
+    },
+    {
+      "pair": "E6",
+      "claim": "FiD uses DPR for every dataset reported in the paper.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "fid_retrieval"
+      ],
+      "id": "C14"
+    },
+    {
+      "pair": "E1",
+      "claim": "The reported DPR retriever uses two independent BERT encoders for questions and passages.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "dpr_enc"
+      ],
+      "id": "C15"
+    },
+    {
+      "pair": "E7",
+      "claim": "The reported FiD experiments initialize from T5; the method description also allows a model such as BART.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "fid_architecture",
+        "fid_initialization"
+      ],
+      "id": "C16"
+    },
+    {
+      "pair": "E2",
+      "claim": "BART is initialized by loading a released BERT checkpoint.",
+      "judgment": "refuted",
+      "variant": "challenge",
+      "passages": [
+        "bart_compare",
+        "bart_init"
+      ],
+      "id": "C17"
+    },
+    {
+      "pair": "E2",
+      "claim": "The BART paper compares its bidirectional encoder with BERT within a broader sequence-to-sequence architecture.",
+      "judgment": "supported",
+      "variant": "supported",
+      "passages": [
+        "bart_compare",
+        "bart_init"
+      ],
+      "id": "C18"
+    }
+  ]
+}

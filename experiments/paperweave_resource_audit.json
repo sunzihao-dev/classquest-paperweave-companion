@@ -1,0 +1,92 @@
+{
+  "evidence_type": "Source-traceability and teaching-resource audit, not a learning study or classifier benchmark",
+  "date": "2026-11-01",
+  "original_edges": 9,
+  "covered_edges": 9,
+  "cards": 18,
+  "source_documents": 5,
+  "source_passages": 15,
+  "resolvable_anchors": 15,
+  "relation_counts": {
+    "component use": 3,
+    "author-stated conceptual relation": 3,
+    "conditional use": 1,
+    "experimental instantiation": 1,
+    "curator comparison": 1
+  },
+  "card_judgments": {
+    "refuted": 7,
+    "not established": 2,
+    "supported": 9
+  },
+  "original_status_counts": {
+    "verified": 5,
+    "conceptual": 3,
+    "inferred": 1
+  },
+  "passage_checks": [
+    {
+      "passage": "dpr_enc",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "bart_compare",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "bart_init",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "bart_model",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "t5_inspiration",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "t5_dropout",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "t5_model",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "rag_retriever",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "rag_generator",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "rag_training",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "fid_compare",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "fid_architecture",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "fid_joint",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "fid_initialization",
+      "anchor_resolves_on_declared_page": true
+    },
+    {
+      "passage": "fid_retrieval",
+      "anchor_resolves_on_declared_page": true
+    }
+  ],
+  "semantic_review": "AI-assisted, not independently human-validated",
+  "claim_bank_sha256": "c07298df2ce169f3a8710163198a3993dcbc1b6ecac466cc1929d1ffce1d0a3d",
+  "interpretation": "Counts describe a deliberately designed resource. Successful locator checks validate traceability, not the truth of claims, annotation accuracy or student learning."
+}

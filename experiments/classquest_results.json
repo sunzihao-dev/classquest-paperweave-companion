@@ -1,0 +1,59 @@
+{
+  "evidence_type": "constructed software audit; zero human participants",
+  "state_sweep": {
+    "class_size": 30,
+    "compositions": 5456,
+    "mismatches": [],
+    "substantive_action_compositions": 5278,
+    "action_compositions_crossing_completion_bands": 4141,
+    "caveat": "Enumeration frequencies are not estimates of real classroom frequency; thresholds are existing prototype heuristics."
+  },
+  "cohort_drift": {
+    "first_rate": 20,
+    "retry_rate": 100,
+    "displayed_change": 80,
+    "matched_change": 0.0,
+    "matched_n": 4,
+    "caveat": "Even matching participants does not equate item difficulty or establish learning."
+  },
+  "repeated_items": {
+    "unique_respondents": 1,
+    "scored_answers": 3,
+    "displayed_action": "Move on; offer an optional challenge"
+  },
+  "source_validation": [
+    {
+      "case": "valid_control",
+      "accepted_by_structural_validator": true
+    },
+    {
+      "case": "wrong_key",
+      "accepted_by_structural_validator": true
+    },
+    {
+      "case": "unrelated_prompt",
+      "accepted_by_structural_validator": true
+    },
+    {
+      "case": "fabricated_quote",
+      "accepted_by_structural_validator": false
+    },
+    {
+      "case": "wrong_locator",
+      "accepted_by_structural_validator": false
+    }
+  ],
+  "short_answer": {
+    "overlap_hint": 1.0,
+    "outcome": "needs_review",
+    "caveat": "The deliberately incorrect answer includes rubric words; the application correctly requires review."
+  },
+  "provenance": {
+    "python": "3.11.11",
+    "source_sha256": {
+      "analytics.py": "487c8f6322b24a78a2de9ed48019d15790fbab0f3531abdac17fbb0bd743db31",
+      "quiz.py": "6aed1ec85d382cf3773478eb2b0f92e16a24802b79810689316c307f4fa78866"
+    },
+    "execution_environment": "Linux research VM; hostname omitted from public record"
+  }
+}

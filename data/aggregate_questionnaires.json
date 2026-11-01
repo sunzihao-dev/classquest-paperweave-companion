@@ -1,0 +1,36 @@
+{
+  "classquest": {
+    "question": "How useful was ClassQuest in helping you understand computing concepts, identify mistakes and improve your answers through feedback and follow-up questions?",
+    "rating_counts": {
+      "5": 1,
+      "6": 2,
+      "7": 4,
+      "8": 2,
+      "9": 11
+    },
+    "invited": 24,
+    "respondents": 20,
+    "year_level": 10,
+    "sessions": 3,
+    "minutes_per_session": 35,
+    "provenance": "Practitioner-supplied aggregate account; original individual records were not inspected for this companion.",
+    "interpretation": "Perceived usefulness, not a learning-gain or between-tool effectiveness estimate."
+  },
+  "paperweave": {
+    "question": "How useful was PaperWeave in helping you understand the relationships between computing research papers and evaluate the evidence supporting those relationships?",
+    "rating_counts": {
+      "6": 2,
+      "7": 3,
+      "8": 8,
+      "9": 5,
+      "10": 2
+    },
+    "invited": 22,
+    "respondents": 20,
+    "year_level": 11,
+    "sessions": 2,
+    "minutes_per_session": 40,
+    "provenance": "Practitioner-supplied aggregate account; original individual records were not inspected for this companion.",
+    "interpretation": "Perceived usefulness, not a learning-gain or between-tool effectiveness estimate."
+  }
+}

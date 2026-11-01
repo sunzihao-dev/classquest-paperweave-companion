@@ -1,0 +1,32 @@
+{
+  "dpr": {
+    "title": "DPR",
+    "version": "ACL Anthology proceedings PDF, 2020",
+    "url": "https://aclanthology.org/2020.emnlp-main.550.pdf",
+    "sha256": "2abfc7991519be2b8ce30215905516fdb593218b7bf59e50ece0d8a088a7c4d5"
+  },
+  "bart": {
+    "title": "BART",
+    "version": "ACL Anthology proceedings PDF, 2020",
+    "url": "https://aclanthology.org/2020.acl-main.703.pdf",
+    "sha256": "3562c723fe7bebb8b362533122b3ca5c065037c8e8d67460654cf3740652bb59"
+  },
+  "t5": {
+    "title": "T5",
+    "version": "JMLR 21(140), 2020 PDF",
+    "url": "https://www.jmlr.org/papers/volume21/20-074/20-074.pdf",
+    "sha256": "66cf9f77e46691853703eb6982dea337a53361d509fb99be719b5410c5467e41"
+  },
+  "rag": {
+    "title": "RAG",
+    "version": "arXiv:2005.11401v4, 12 April 2021",
+    "url": "https://arxiv.org/pdf/2005.11401v4",
+    "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"
+  },
+  "fid": {
+    "title": "FiD",
+    "version": "ACL Anthology proceedings PDF, 2021",
+    "url": "https://aclanthology.org/2021.eacl-main.74.pdf",
+    "sha256": "a0b8708f35c78bc5799322a91e042f33233a5e48226c400843082c8a76b01175"
+  }
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "from": "bert",
+    "to": "dpr",
+    "label": "encoder backbone",
+    "perspective": [
+      "architecture"
+    ],
+    "status": "verified",
+    "source": "DPR §3.1"
+  },
+  {
+    "from": "bert",
+    "to": "bart",
+    "label": "generalised by",
+    "perspective": [
+      "architecture",
+      "learning"
+    ],
+    "status": "conceptual",
+    "source": "BART §§1–2.1"
+  },
+  {
+    "from": "bert",
+    "to": "t5",
+    "label": "objective influence",
+    "perspective": [
+      "learning"
+    ],
+    "status": "conceptual",
+    "source": "T5 §3.3.2"
+  },
+  {
+    "from": "dpr",
+    "to": "rag",
+    "label": "retriever",
+    "perspective": [
+      "architecture"
+    ],
+    "status": "verified",
+    "source": "RAG §2.2"
+  },
+  {
+    "from": "bart",
+    "to": "rag",
+    "label": "generator",
+    "perspective": [
+      "architecture"
+    ],
+    "status": "verified",
+    "source": "RAG §2.3"
+  },
+  {
+    "from": "dpr",
+    "to": "fid",
+    "label": "passage retrieval",
+    "perspective": [
+      "architecture"
+    ],
+    "status": "verified",
+    "source": "FiD §3 (dataset-dependent)"
+  },
+  {
+    "from": "t5",
+    "to": "fid",
+    "label": "generator",
+    "perspective": [
+      "architecture"
+    ],
+    "status": "verified",
+    "source": "FiD §3"
+  },
+  {
+    "from": "rag",
+    "to": "fid",
+    "label": "fusion contrast",
+    "perspective": [
+      "concept"
+    ],
+    "status": "conceptual",
+    "source": "FiD §§2–3"
+  },
+  {
+    "from": "t5",
+    "to": "bart",
+    "label": "parallel seq2seq paths",
+    "perspective": [
+      "concept",
+      "learning"
+    ],
+    "status": "inferred",
+    "source": "Analytical comparison · review needed"
+  }
+]

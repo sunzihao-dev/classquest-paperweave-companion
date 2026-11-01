@@ -1,0 +1,41 @@
+{
+  "first": {
+    "n": 20,
+    "respondents": 20,
+    "scored": 20,
+    "correct": 4,
+    "incorrect": 16,
+    "pending": 0,
+    "missing": 0,
+    "observed_accuracy": 0.2,
+    "scored_coverage": 1.0,
+    "completion_bounds": [
+      0.2,
+      0.2
+    ],
+    "interpretation": "Bounds describe possible completion of this item; not mastery or a confidence interval."
+  },
+  "retry": {
+    "n": 20,
+    "respondents": 4,
+    "scored": 4,
+    "correct": 4,
+    "incorrect": 0,
+    "pending": 0,
+    "missing": 16,
+    "observed_accuracy": 1.0,
+    "scored_coverage": 0.2,
+    "completion_bounds": [
+      0.2,
+      1.0
+    ],
+    "interpretation": "Bounds describe possible completion of this item; not mastery or a confidence interval."
+  },
+  "paired": {
+    "matched_n": 4,
+    "first_only_n": 16,
+    "retry_only_n": 0,
+    "matched_change_pp": 0.0,
+    "interpretation": "Descriptive paired change; item equivalence and causal learning are unestablished."
+  }
+}

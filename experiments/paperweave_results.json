@@ -1,0 +1,21 @@
+{
+  "evidence_type": "structural census of curated prototype, not extraction benchmark",
+  "nodes": 6,
+  "edges": 9,
+  "status_counts": {
+    "verified": 5,
+    "conceptual": 3,
+    "inferred": 1
+  },
+  "informal_source_strings": 9,
+  "explicit_structured_field_counts": {
+    "source_version": 0,
+    "page": 0,
+    "passage_id": 0,
+    "reviewer": 0,
+    "review_date": 0,
+    "scope": 0
+  },
+  "edge_sha256": "9995d28d400b98f6c364096487b685b724799f6784dfc77431aba4ee9a05bdf9",
+  "caveat": "Missing structured fields do not establish that a relationship is false. No independent human annotation or learner study was performed."
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Cite this repository snapshot with its version or commit. The companion is not an accepted proceedings publication."
+title: "ClassQuest and PaperWeave: Research Companion"
+type: software
+authors:
+  - name: "sunzihao-dev"
+    website: "https://github.com/sunzihao-dev"
+version: "1.0.0"
+date-released: "2026-11-01"
+url: "https://github.com/sunzihao-dev/classquest-paperweave-companion"
+repository-code: "https://github.com/sunzihao-dev/classquest-paperweave-companion"
+abstract: "Manuscript snapshots, aggregate feedback, constructed software audits and a source-linked PaperWeave teaching resource. The new materials have not been classroom-evaluated."
